@@ -320,6 +320,33 @@ ul#navigation li .fa {
 	font-size: 16px;
 }
 
+.smallsocial-icons ul {
+	padding: 0 20px;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.smallsocial-icons li {
+	/* float: left; */
+	/* width: 33%; */
+	padding: 5px;
+	text-align: center;
+	display: inline-block;
+}
+
+.smallsocial-icons a {
+	color: #63e7bb;
+}
+
+.smallsocial-icons a:hover,.social-icons a:focus {
+	color: #6eb2f3;
+}
+
+.smallsocial-icons i {
+	font-size: 16px;
+}
+
 #copyright{
 	text-align:center;
 	font-size:0.7em;
@@ -1395,32 +1422,7 @@ ul.grid li a,ul.grid li img {
 		background-size: cover;
 	}
 
-	.smallsocial-icons ul {
-		padding: 0 20px;
-		margin: 0;
-		list-style: none;
-		text-align: center;
-	}
 	
-	.smallsocial-icons li {
-		/* float: left; */
-		/* width: 33%; */
-		padding: 5px;
-		text-align: center;
-		display: inline-block;
-	}
-	
-	.smallsocial-icons a {
-		color: #63e7bb;
-	}
-	
-	.smallsocial-icons a:hover,.social-icons a:focus {
-		color: #6eb2f3;
-	}
-	
-	.smallsocial-icons i {
-		font-size: 16px;
-	}
 
 }
 
