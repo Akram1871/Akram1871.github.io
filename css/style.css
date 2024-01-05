@@ -1359,16 +1359,67 @@ ul.grid li a,ul.grid li img {
 
 @media (max-width: 991px) {
 	.mobilemenu {
-	display: block;
+		display: block;
+		}
+	
+	.social-icons {
+		left: 0px;
+		z-index: 0;
 	}
 
-	.social-icons,#main-nav {
+	#main-nav {
 		left: 0px;
 		z-index: 0;
 	}
 
 	#main {
 		left: 0;
+	}
+	#smallprofile {
+		text-align: center;
+		/* padding: 30px 10px; */
+		position: relative;
+	}
+	 
+	#smallprofile .smallportrate{
+		right: 0;
+		background-image: url("../img/personal/personal-image.png");
+		width: 200px;
+		margin: 0 auto;
+		height: 200px;
+		border-radius: 50%;
+		background-position-x: right;
+	
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+	}
+
+	.smallsocial-icons ul {
+		padding: 0 20px;
+		margin: 0;
+		list-style: none;
+		text-align: center;
+	}
+	
+	.smallsocial-icons li {
+		/* float: left; */
+		/* width: 33%; */
+		padding: 5px;
+		text-align: center;
+		display: inline-block;
+	}
+	
+	.smallsocial-icons a {
+		color: #63e7bb;
+	}
+	
+	.smallsocial-icons a:hover,.social-icons a:focus {
+		color: #6eb2f3;
+	}
+	
+	.smallsocial-icons i {
+		font-size: 16px;
 	}
 
 }
