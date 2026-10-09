@@ -1,0 +1,635 @@
+[
+  {
+    "id": "cse3298-proj-1",
+    "title": "MediShare-Medicine Donation App",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section A",
+    "group": "Group 1",
+    "students": [
+      {
+        "name": "NAZMUL HAQUE FAHAD",
+        "id": "223071019",
+        "github": "https://github.com/Fahad-1150",
+        "linkedin": "https://www.linkedin.com/posts/nazmul-haque-fahad-890280338_i-am-pleased-to-share-that-i-have-successfully-activity-7424723618108030976-760x?utm_source=share&utm_medium=member_android&rcm=ACoAAFTB5OwBLErbjvXcAw1vsG8bz_MYXSCr2-k"
+      }
+    ],
+    "repo": "https://github.com/Fahad-1150/MediShare",
+    "linkedin": "https://www.linkedin.com/posts/nazmul-haque-fahad-890280338_i-am-pleased-to-share-that-i-have-successfully-activity-7424723618108030976-760x?utm_source=share&utm_medium=member_android&rcm=ACoAAFTB5OwBLErbjvXcAw1vsG8bz_MYXSCr2-k"
+  },
+  {
+    "id": "cse3298-proj-2",
+    "title": "Servyn: Local Service Booking and Trust System",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section A",
+    "group": "Group 3",
+    "students": [
+      {
+        "name": "Marufa Khanam",
+        "id": "223071008",
+        "github": "https://github.com/marufaeity",
+        "linkedin": "https://www.linkedin.com/posts/mhjayeed715_servyn-localservices-techforgood-activity-7426312900476219392-B3l1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD6GuCUBinyX7D4OcmJc9YLdwrqDmXXCZAo"
+      },
+      {
+        "name": "S. M. Mehrab Hossain Jayeed",
+        "id": "223071033",
+        "github": "https://github.com/mhjayeed715/",
+        "linkedin": null
+      }
+    ],
+    "repo": "https://github.com/mhjayeed715/servyn",
+    "linkedin": "https://www.linkedin.com/posts/mhjayeed715_servyn-localservices-techforgood-activity-7426312900476219392-B3l1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD6GuCUBinyX7D4OcmJc9YLdwrqDmXXCZAo"
+  },
+  {
+    "id": "cse3298-proj-3",
+    "title": "Pension_application",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section A",
+    "group": "Group 4",
+    "students": [
+      {
+        "name": "Bapon Das",
+        "id": "223071014",
+        "github": "https://github.com/bapondas2k01",
+        "linkedin": "https://www.linkedin.com/posts/bapon-das-5672a33a8_supabase-flutter-pension-ugcPost-7426745043337687040-Rjrs?utm_source=share&utm_medium=member_android&rcm=ACoAAGO12V8B4JUUaNVd_rrw-xGHp0DI6hv0hto"
+      },
+      {
+        "name": "Zubayed Amin",
+        "id": "223071041",
+        "github": "https://github.com/Zubayed-Amin",
+        "linkedin": "https://www.linkedin.com/posts/zubayed-amin_thrill-to-announce-our-flutter-project-pension-ugcPost-7426746582571712514-haEJ?utm_source=share&utm_medium=member_android&rcm=ACoAAGO12V8B4JUUaNVd_rrw-xGHp0DI6hv0hto"
+      }
+    ],
+    "repo": "https://github.com/bapondas2k01/Pension_Application",
+    "linkedin": "https://www.linkedin.com/posts/bapon-das-5672a33a8_supabase-flutter-pension-ugcPost-7426745043337687040-Rjrs?utm_source=share&utm_medium=member_android&rcm=ACoAAGO12V8B4JUUaNVd_rrw-xGHp0DI6hv0hto"
+  },
+  {
+    "id": "cse3298-proj-4",
+    "title": "Quizi ( A Silent Online Quiz System )",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section A",
+    "group": "Group 6",
+    "students": [
+      {
+        "name": "Abdul Kader Imon",
+        "id": "223071025",
+        "github": "https://github.com/imon025/Quizi-Mobile-App-Flutter-Supabase-A-K-Imon",
+        "linkedin": "https://www.linkedin.com/posts/abdul-kader-imon-6999553ab_quizi-edtech-learningmadefun-activity-7426173976290443264--H1c?utm_source=share&utm_medium=member_android&rcm=ACoAAGRXlpUBqreqz7O-0_TMHsQ1xdEud8bF5w0"
+      },
+      {
+        "name": "Siam Al-Hasan Emon",
+        "id": "223071021",
+        "github": "https://github.com/siam-al-hasan021",
+        "linkedin": "https://www.linkedin.com/posts/siamalhasanemon_quizi-groupproject-flutter-activity-7425555277661302784-oBMZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFTYGikBJqFk6U86E-g7pFtaXwQm7xcnxt4"
+      }
+    ],
+    "repo": "https://github.com/imon025/Quizi-A-Silent-Classrom-Quiz-System-.git",
+    "linkedin": "https://www.linkedin.com/posts/abdul-kader-imon-6999553ab_quizi-edtech-learningmadefun-activity-7426173976290443264--H1c?utm_source=share&utm_medium=member_android&rcm=ACoAAGRXlpUBqreqz7O-0_TMHsQ1xdEud8bF5w0"
+  },
+  {
+    "id": "cse3298-proj-5",
+    "title": "Flood Prediction and Alert System",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section A",
+    "group": "Group 9",
+    "students": [
+      {
+        "name": "Purobi Akter",
+        "id": "223071003",
+        "github": null,
+        "linkedin": null
+      }
+    ],
+    "repo": "https://github.com/PuRoVi5/Flood_Prediction_Alert_System.git",
+    "linkedin": "https://www.linkedin.com/posts/purovi-rahman-5bb554339_exciting-milestone-flood-prediction-alert-activity-7426306851128049665-XZSm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFT5_18BTwdXmBa5oMQNB1QLcR5sEwb86Bs"
+  },
+  {
+    "id": "cse3298-proj-6",
+    "title": "Emergency Medicine Finder",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section A",
+    "group": "Group 11",
+    "students": [
+      {
+        "name": "Afifa Rahman Mahira",
+        "id": "223071002",
+        "github": "https://github.com/AfifaRahman-Mahira",
+        "linkedin": "https://www.linkedin.com/posts/afifa-rahman-0695b23ab_flutter-mobileappdevelopment-firebase-activity-7426310043597299712-0AXa?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGRKNNEB2N_z2Co3jbDG8HKbPuXswOVYo1o"
+      }
+    ],
+    "repo": "https://github.com/AfifaRahman-Mahira/emergency_medicine_finder.git",
+    "linkedin": "https://www.linkedin.com/posts/afifa-rahman-0695b23ab_flutter-mobileappdevelopment-firebase-activity-7426310043597299712-0AXa?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGRKNNEB2N_z2Co3jbDG8HKbPuXswOVYo1o"
+  },
+  {
+    "id": "cse3298-proj-9",
+    "title": "SafeWalk",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section A",
+    "group": "Group 17",
+    "students": [
+      {
+        "name": "Jarin Tanzim",
+        "id": "223071132",
+        "github": "https://github.com/Jarin-Tanzim",
+        "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7424504886639374336/"
+      }
+    ],
+    "repo": "https://github.com/Jarin-Tanzim/safeWalk",
+    "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7424504886639374336/"
+  },
+  {
+    "id": "cse3298-proj-10",
+    "title": "Haat Baran",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section A",
+    "group": "Group 1",
+    "students": [
+      {
+        "name": "Mostofa Hasin Mahdi",
+        "id": "223071109",
+        "github": "https://github.com/Mostofa-Hasin-Mahdi",
+        "linkedin": "https://www.linkedin.com/posts/mostofa-hasin-mahdi-76777a182_flutter-supabase-postgresql-ugcPost-7426518931080728576-s4Dr?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACsvMr8BjlIN8vFxdAbGQE74jHTFqHHf7iY"
+      },
+      {
+        "name": "Talal Sharar Apurbo",
+        "id": "223071108",
+        "github": "https://github.com/TalalShararApurbo",
+        "linkedin": null
+      }
+    ],
+    "repo": "https://github.com/Mostofa-Hasin-Mahdi/Haat-Baran",
+    "linkedin": "https://www.linkedin.com/posts/mostofa-hasin-mahdi-76777a182_flutter-supabase-postgresql-ugcPost-7426518931080728576-s4Dr?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACsvMr8BjlIN8vFxdAbGQE74jHTFqHHf7iY"
+  },
+  {
+    "id": "cse3298-proj-11",
+    "title": "blood donation system",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section A",
+    "group": "Group 3",
+    "students": [
+      {
+        "name": "Nusrat Jahan Konka",
+        "id": "223071017",
+        "github": "https://github.com/nusratkonka",
+        "linkedin": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7426280539030069248"
+      },
+      {
+        "name": "Shatil Ahmed",
+        "id": "2210751001",
+        "github": "https://github.com/shatil-ahmed",
+        "linkedin": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7426269590856429568"
+      }
+    ],
+    "repo": "https://github.com/shatil-ahmed/blood-donation-system",
+    "linkedin": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7426280539030069248"
+  },
+  {
+    "id": "cse3298-proj-12",
+    "title": "AI-Powered Travel Planning App",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section A",
+    "group": "Group 5",
+    "students": [
+      {
+        "name": "Shamima Sultana",
+        "id": "221071026",
+        "github": "https://github.com/shamimasultana12",
+        "linkedin": "https://www.linkedin.com/posts/shamima-sultana-b005aa3ab_go-planner-is-an-ai-powered-travel-planner-activity-7426279280059293696-KBpN?utm_source=share&utm_medium=member_android&rcm=ACoAAGRKH7ABX0DJ68IAAc_camWOoSkn4zuK-q0"
+      },
+      {
+        "name": "Afrin Akter",
+        "id": "221071020",
+        "github": "https://github.com/AfrinAkter020",
+        "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7426178048519086080/"
+      }
+    ],
+    "repo": "https://github.com/AfrinAkter020/GoPlanner---AI-Powered-Travel-Planning-App",
+    "linkedin": "https://www.linkedin.com/posts/shamima-sultana-b005aa3ab_go-planner-is-an-ai-powered-travel-planner-activity-7426279280059293696-KBpN?utm_source=share&utm_medium=member_android&rcm=ACoAAGRKH7ABX0DJ68IAAc_camWOoSkn4zuK-q0"
+  },
+  {
+    "id": "cse3298-proj-14",
+    "title": "Cemetery Management & Digital Memorial System",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section A",
+    "group": "Group 9",
+    "students": [
+      {
+        "name": "Md. Imon Hosen",
+        "id": "223071036",
+        "github": "https://github.com/mdimonhosen",
+        "linkedin": "https://www.linkedin.com/posts/md-imon-hosen_cemetery-management-system-created-the-activity-7426325445291220992-JP2L?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAFT3Bq8BabjNN11Y_3fCnwkf51bArtGPMQk&utm_campaign=copy_link"
+      },
+      {
+        "name": "Antora Akter",
+        "id": "223071018",
+        "github": "https://github.com/AntoraEyerish",
+        "linkedin": "https://www.linkedin.com/posts/antora-akter-6b756b339_i-am-pleased-to-announce-the-completion-of-activity-7426344608873345025-1D6L?utm_source=share&utm_medium=member_android&rcm=ACoAAFT6gCsB4cJLfVEK5eGJ0QThMTernd1iBm4"
+      }
+    ],
+    "repo": "https://github.com/mdimonhosen/Cemetery-Management-Digital-Memorial-System.git",
+    "linkedin": "https://www.linkedin.com/posts/md-imon-hosen_cemetery-management-system-created-the-activity-7426325445291220992-JP2L?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAFT3Bq8BabjNN11Y_3fCnwkf51bArtGPMQk&utm_campaign=copy_link"
+  },
+  {
+    "id": "cse3298-proj-17",
+    "title": "MINI- Healthy Paws Daily",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section A",
+    "group": "Group 12",
+    "students": [
+      {
+        "name": "Sanjida Akter",
+        "id": "223071042",
+        "github": "https://github.com/Sanjida-42",
+        "linkedin": "https://www.linkedin.com/posts/sanjida-akter-970707239_flutter-mobileappdevelopment-dart-ugcPost-7425763272563539969 3SjZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADtfGKQBVfjmvoQTyuZMys7Gg_jhsLrxulc"
+      },
+      {
+        "name": "Ummey Souda Rahi",
+        "id": "223071048",
+        "github": "https://github.com/Souda7766",
+        "linkedin": null
+      }
+    ],
+    "repo": "https://github.com/Sanjida-42/MINI",
+    "linkedin": "https://www.linkedin.com/posts/sanjida-akter-970707239_flutter-mobileappdevelopment-dart-ugcPost-7425763272563539969 3SjZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADtfGKQBVfjmvoQTyuZMys7Gg_jhsLrxulc"
+  },
+  {
+    "id": "cse3298-proj-18",
+    "title": "Valesco: Comprehensive Healthcare Platform",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section A",
+    "group": "Group 13",
+    "students": [
+      {
+        "name": "Ahabab Murshed",
+        "id": "223071038",
+        "github": "https://github.com/overcooked47",
+        "linkedin": "https://www.linkedin.com/posts/ahababmurshed_thrilled-to-announce-our-very-first-flutter-activity-7426323052851875841-CNGL?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD_-NdEB_cNhpe-sn5E-r0k71DS7o5lWVRE"
+      },
+      {
+        "name": "Md Sakib",
+        "id": "223071029",
+        "github": "https://github.com/Sakib8699",
+        "linkedin": "https://www.linkedin.com/posts/mdsakib14_flutter-project-activity-7426304597121593344-t1xT?utm_medium=ios_app&rcm=ACoAAFQSdAwBfuuFCi2rpwPFKjkeRGL1HOUnoGQ&utm_source=social_share_send&utm_campaign=copy_link"
+      }
+    ],
+    "repo": "https://github.com/overcooked47/Valesco-Healthcare-App---Flutter---Appwrite",
+    "linkedin": "https://www.linkedin.com/posts/ahababmurshed_thrilled-to-announce-our-very-first-flutter-activity-7426323052851875841-CNGL?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD_-NdEB_cNhpe-sn5E-r0k71DS7o5lWVRE"
+  },
+  {
+    "id": "cse3298-proj-20",
+    "title": "PlateShare",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section C",
+    "group": "Team A",
+    "students": [
+      {
+        "name": "Md. Shakil Ahamed",
+        "id": "223071129",
+        "github": "https://github.com/shakilAhamed001",
+        "linkedin": "https://www.linkedin.com/posts/shakil-ahamed-650377315_firstmobileapp-fooddonation-socialimpact-activity-7423942727844864000-8aTF?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAE_3XdwBPaNOs2NzC6xsebiZaxD3IpAoNsI"
+      },
+      {
+        "name": "Farzana Fahmida Meam",
+        "id": "223071130",
+        "github": "https://github.com/Meam-20",
+        "linkedin": null
+      },
+      {
+        "name": "Khairul Alam",
+        "id": "223061001",
+        "github": null,
+        "linkedin": null
+      }
+    ],
+    "repo": "https://github.com/shakilAhamed001/PlateShare_App",
+    "linkedin": "https://www.linkedin.com/posts/shakil-ahamed-650377315_firstmobileapp-fooddonation-socialimpact-activity-7423942727844864000-8aTF?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAE_3XdwBPaNOs2NzC6xsebiZaxD3IpAoNsI"
+  },
+  {
+    "id": "cse3298-proj-21",
+    "title": "Smart Disaster Alert & Safety App",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section C",
+    "group": "Team B",
+    "students": [
+      {
+        "name": "Sohag",
+        "id": "223071151",
+        "github": "https://github.com/ahadulsohag",
+        "linkedin": null
+      },
+      {
+        "name": "Taposh Rahaman Rohan",
+        "id": "223071117",
+        "github": null,
+        "linkedin": "https://www.linkedin.com/posts/ahadul-sohag-82a392334_softwareengineering-academicproject-disastermanagement-activity-7426675732543725568-c2HW?utm_source=share&utm_medium=member_android&rcm=ACoAAFQPzyIB17Z4HzeP4QnA-y3qwfnjKlzyoRM"
+      },
+      {
+        "name": "Shaikh Foysal Peyal",
+        "id": "223071157",
+        "github": null,
+        "linkedin": null
+      }
+    ],
+    "repo": "https://github.com/ahadulsohag/sdasa",
+    "linkedin": "https://www.linkedin.com/posts/ahadul-sohag-82a392334_softwareengineering-academicproject-disastermanagement-activity-7426675732543725568-c2HW?utm_source=share&utm_medium=member_android&rcm=ACoAAFQPzyIB17Z4HzeP4QnA-y3qwfnjKlzyoRM"
+  },
+  {
+    "id": "cse3298-proj-22",
+    "title": "UniVibe",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section C",
+    "group": "Team C",
+    "students": [
+      {
+        "name": "Mahin Ahmed Dipta",
+        "id": "223071154",
+        "github": "https://github.com/diptomahin",
+        "linkedin": "https://www.linkedin.com/posts/mahindipto_flutter-mobileapp-universitycommunity-activity-7426246231586430976-AGnK?utm_source=share&utm_medium=member_desktop&rcm=ACoAACt3ZnEBSjvpc33g9LDNvzloPM-xY0Vd-Q0"
+      },
+      {
+        "name": "Ferdause Al Mahmud",
+        "id": "223071156",
+        "github": "https://github.com/ferdause-al-mahmud",
+        "linkedin": null
+      },
+      {
+        "name": "Ashikur Rahman Anik",
+        "id": "223071159",
+        "github": "https://github.com/AsikurRahman007",
+        "linkedin": null
+      }
+    ],
+    "repo": "https://github.com/diptomahin/UniVibe_Campus_Event_Tracker",
+    "linkedin": "https://www.linkedin.com/posts/mahindipto_flutter-mobileapp-universitycommunity-activity-7426246231586430976-AGnK?utm_source=share&utm_medium=member_desktop&rcm=ACoAACt3ZnEBSjvpc33g9LDNvzloPM-xY0Vd-Q0"
+  },
+  {
+    "id": "cse3298-proj-23",
+    "title": "Dhaka metro",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section C",
+    "group": "Team D",
+    "students": [
+      {
+        "name": "Md Haisam Hoque",
+        "id": "223071114",
+        "github": "https://github.com/haisam10",
+        "linkedin": null
+      },
+      {
+        "name": "Ariful Islam Sagor",
+        "id": "223071153",
+        "github": "https://github.com/sagorrr351",
+        "linkedin": "https://www.linkedin.com/posts/haisam-hoque_flutter-github-mobileapp-ugcPost-7426254322197319680-aix1?utm_source=share&utm_medium=member_android&rcm=ACoAAF0lC8QB-WCTRI60cgkkV-wjRkjjE5e32f4"
+      },
+      {
+        "name": "Jannatul Tanzela",
+        "id": "223071140",
+        "github": "https://github.com/JannatulTanzela",
+        "linkedin": null
+      }
+    ],
+    "repo": "https://github.com/haisam10/dmt_seba.git",
+    "linkedin": "https://www.linkedin.com/posts/haisam-hoque_flutter-github-mobileapp-ugcPost-7426254322197319680-aix1?utm_source=share&utm_medium=member_android&rcm=ACoAAF0lC8QB-WCTRI60cgkkV-wjRkjjE5e32f4"
+  },
+  {
+    "id": "cse3298-proj-24",
+    "title": "WasteFreeBD",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section C",
+    "group": "Team E",
+    "students": [
+      {
+        "name": "Shamsunnahar Neha",
+        "id": "223071142",
+        "github": "https://github.com/Neha-Mazumder",
+        "linkedin": null
+      },
+      {
+        "name": "Afinur Binte Aziz ARshi",
+        "id": "223071172",
+        "github": "https://github.com/Afinur",
+        "linkedin": null
+      }
+    ],
+    "repo": "https://github.com/Neha-Mazumder/WasteFreeBD.git",
+    "linkedin": "https://www.linkedin.com/posts/shamsunnaharneha_wfbd-ecowaste-techforgood-activity-7426327607211610112-3pyY?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD_RMcAB4xiAOMudJl_xKqH1Fq6lwTnqHbg"
+  },
+  {
+    "id": "cse3298-proj-25",
+    "title": "Local Transport Info",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section C",
+    "group": "Team F",
+    "students": [
+      {
+        "name": "Sowrav Dey",
+        "id": "223071102",
+        "github": "https://github.com/sowrav10",
+        "linkedin": null
+      },
+      {
+        "name": "Anika Tasnia sadia",
+        "id": "223071119",
+        "github": "https://github.com/AnikaTasniaSadia",
+        "linkedin": "https://www.linkedin.com/posts/anika-tasnia-684694268_softwareengineering-academicproject-flutter-activity-7426335029083127808-AaJz?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAEGYv8QB7oFdegbRaAhq3cORte_juYAOyFs&utm_campaign=copy_link"
+      }
+    ],
+    "repo": "https://github.com/AnikaTasniaSadia/Local_Transport_Info",
+    "linkedin": "https://www.linkedin.com/posts/anika-tasnia-684694268_softwareengineering-academicproject-flutter-activity-7426335029083127808-AaJz?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAEGYv8QB7oFdegbRaAhq3cORte_juYAOyFs&utm_campaign=copy_link"
+  },
+  {
+    "id": "cse3298-proj-26",
+    "title": "TalentLink",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section C",
+    "group": "Team G",
+    "students": [
+      {
+        "name": "Md Niham Alamgir",
+        "id": "223061006",
+        "github": "https://github.com/Niham1006",
+        "linkedin": null
+      },
+      {
+        "name": "Md Kayum",
+        "id": "223061008",
+        "github": "https://github.com/Md-Kayum",
+        "linkedin": "https://www.linkedin.com/posts/niham-alamgir-2b92b7311_talentlink-finalproject-softwareengineering-ugcPost-7426601247044034560-thS9?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE8-k-0BgEpBMIpV_fQVbTSKLKPYQZmYVLk"
+      }
+    ],
+    "repo": "https://github.com/Md-Kayum/Talentlink",
+    "linkedin": "https://www.linkedin.com/posts/niham-alamgir-2b92b7311_talentlink-finalproject-softwareengineering-ugcPost-7426601247044034560-thS9?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE8-k-0BgEpBMIpV_fQVbTSKLKPYQZmYVLk"
+  },
+  {
+    "id": "cse3298-proj-28",
+    "title": "RentEase",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section C",
+    "group": "Team I",
+    "students": [
+      {
+        "name": "MD Mahabubur Rahman",
+        "id": "223071107",
+        "github": "https://github.com/MAHABUB122003",
+        "linkedin": "https://www.linkedin.com/posts/md-mahabubur-rahman-mahabub-41674b33a_softwareengineering-flutter-firebase-activity-7420853938138066944-0piS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFUvBJIB941Hv1xGeZajyhBNx4wI2-0KAqM"
+      },
+      {
+        "name": "Bishal Hossain Antor",
+        "id": "223071118",
+        "github": "https://github.com/BishalHossain05?tab=repositories",
+        "linkedin": null
+      }
+    ],
+    "repo": "https://github.com/MAHABUB122003/RentEase_APP",
+    "linkedin": "https://www.linkedin.com/posts/md-mahabubur-rahman-mahabub-41674b33a_softwareengineering-flutter-firebase-activity-7420853938138066944-0piS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFUvBJIB941Hv1xGeZajyhBNx4wI2-0KAqM"
+  },
+  {
+    "id": "cse3298-proj-29",
+    "title": "Blood Donation APP",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section C",
+    "group": "Team J",
+    "students": [
+      {
+        "name": "Md. Imtiaz Mahmud",
+        "id": "223061002 (CSIT)",
+        "github": "https://github.com/IMTIAZ-MAHAMUD",
+        "linkedin": null
+      },
+      {
+        "name": "Md. Nahid",
+        "id": "223071128",
+        "github": "https://github.com/killuaZoldyck69",
+        "linkedin": "https://www.linkedin.com/posts/md-imtiaz-mahamud-635185339_firstmobileapp-fooddonation-socialimpact-activity-7425952070937219072-fLgR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFTryUkBQtphRWjbiUCPibdvFgG_CYaB1Cs"
+      }
+    ],
+    "repo": "https://github.com/killuaZoldyck69/BloodLink-Mobile-App",
+    "linkedin": "https://www.linkedin.com/posts/md-imtiaz-mahamud-635185339_firstmobileapp-fooddonation-socialimpact-activity-7425952070937219072-fLgR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFTryUkBQtphRWjbiUCPibdvFgG_CYaB1Cs"
+  },
+  {
+    "id": "cse3298-proj-30",
+    "title": "YUSIC where artists and studio meets",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section C",
+    "group": "Team K",
+    "students": [
+      {
+        "name": "shayon dey",
+        "id": "223071171",
+        "github": "https://github.com/Shayon245",
+        "linkedin": null
+      },
+      {
+        "name": "fatema ahmed sadia",
+        "id": "223071148",
+        "github": null,
+        "linkedin": null
+      },
+      {
+        "name": "Imtiaz Mahmud",
+        "id": "223071103",
+        "github": "https://github.com/imtiaz-mahmud-ratul",
+        "linkedin": "https://www.linkedin.com/posts/imtiaz-mahmud-ratul_flutter-firebase-mobileappdevelopment-activity-7426703176139042816-F1CE?utm_source=share&utm_medium=member_desktop&rcm=ACoAADcWXbkB9xSdu8xzp0o9h-I4okm7WJzDejo"
+      }
+    ],
+    "repo": "https://github.com/TorteyPoka/Yusic.git",
+    "linkedin": "https://www.linkedin.com/posts/imtiaz-mahmud-ratul_flutter-firebase-mobileappdevelopment-activity-7426703176139042816-F1CE?utm_source=share&utm_medium=member_desktop&rcm=ACoAADcWXbkB9xSdu8xzp0o9h-I4okm7WJzDejo"
+  },
+  {
+    "id": "cse3298-proj-31",
+    "title": "To Do App with Flutter",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section C",
+    "group": "Team L",
+    "students": [
+      {
+        "name": "Imtiaz Mahmud",
+        "id": "223071103",
+        "github": "https://github.com/imtiaz-mahmud-ratul",
+        "linkedin": "https://www.linkedin.com/posts/imtiaz-mahmud-ratul_flutter-firebase-mobileappdevelopment-activity-7426703176139042816-F1CE?utm_source=share&utm_medium=member_desktop&rcm=ACoAADcWXbkB9xSdu8xzp0o9h-I4okm7WJzDejo"
+      },
+      {
+        "name": "Roman Hossain",
+        "id": "223071160",
+        "github": null,
+        "linkedin": null
+      },
+      {
+        "name": "Kaniz Suborna Ria",
+        "id": "223071175",
+        "github": null,
+        "linkedin": null
+      }
+    ],
+    "repo": "https://github.com/imtiaz-mahmud-ratul/to_do_app_flutter.git",
+    "linkedin": "https://www.linkedin.com/posts/imtiaz-mahmud-ratul_flutter-firebase-mobileappdevelopment-activity-7426703176139042816-F1CE?utm_source=share&utm_medium=member_desktop&rcm=ACoAADcWXbkB9xSdu8xzp0o9h-I4okm7WJzDejo"
+  },
+  {
+    "id": "cse3298-proj-32",
+    "title": "VISIT BANGLADESH",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section C",
+    "group": "Team M",
+    "students": [
+      {
+        "name": "Mohammad Mainul Islam",
+        "id": "223071137",
+        "github": "https://github.com/78mainul",
+        "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7426232338839322624/?originTrackingId=5wmJD8C2xIinyfth0Mrogw%3D%3D"
+      },
+      {
+        "name": "Nusrat Jahan",
+        "id": "223071138",
+        "github": "https://github.com/lubnaj009",
+        "linkedin": null
+      }
+    ],
+    "repo": "https://github.com/78mainul/visitbangladesh",
+    "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7426232338839322624/?originTrackingId=5wmJD8C2xIinyfth0Mrogw%3D%3D"
+  },
+  {
+    "id": "cse3298-proj-33",
+    "title": "Blood Donation App",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section C",
+    "group": "Team N",
+    "students": [
+      {
+        "name": "MD Rafsan Bhuyan",
+        "id": "223071170",
+        "github": null,
+        "linkedin": "https://www.linkedin.com/posts/md-rafsan-zani-995149339_proud-to-share-our-project-blood-donation-ugcPost-7426291122454474752-zoAU?utm_source=share&utm_medium=member_android&rcm=ACoAAFTqokEB4QkMPVDEMzhU61DsMqj8jjqKOd4"
+      },
+      {
+        "name": "Sabbir Hossain Rari",
+        "id": "223071173",
+        "github": null,
+        "linkedin": null
+      }
+    ],
+    "repo": "https://github.com/rafsan1610/blood_donate_app",
+    "linkedin": "https://www.linkedin.com/posts/md-rafsan-zani-995149339_proud-to-share-our-project-blood-donation-ugcPost-7426291122454474752-zoAU?utm_source=share&utm_medium=member_android&rcm=ACoAAFTqokEB4QkMPVDEMzhU61DsMqj8jjqKOd4"
+  },
+  {
+    "id": "cse3298-proj-34",
+    "title": "Safe-Step",
+    "course": "CSE 3298: Software Engineering Lab",
+    "section": "Section C",
+    "group": "Team O",
+    "students": [
+      {
+        "name": "Md Ebrahim",
+        "id": "223071104",
+        "github": "https://github.com/ebrahim112002",
+        "linkedin": "https://www.linkedin.com/posts/md-ebrahim-8b813a375_safestep-safetyapp-communitysafety-activity-7426297197551370240-cBD6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFy_F4wB6tbY_jwu3IB8hO_IkzrvhRX2o5U"
+      },
+      {
+        "name": "Aka mondal Tithi",
+        "id": "223071122",
+        "github": "https://github.com/aka-tithi",
+        "linkedin": null
+      }
+    ],
+    "repo": "https://github.com/Ebrahim112002/Safe-step-app",
+    "linkedin": "https://www.linkedin.com/posts/md-ebrahim-8b813a375_safestep-safetyapp-communitysafety-activity-7426297197551370240-cBD6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFy_F4wB6tbY_jwu3IB8hO_IkzrvhRX2o5U"
+  }
+]

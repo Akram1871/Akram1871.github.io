@@ -1,0 +1,162 @@
+{
+  "name": "Md. Akram Hossain",
+  "title": "Lecturer in CSE & AI/NLP Researcher",
+  "affiliation": "Shanto-Mariam University of Creative Technology",
+  "department": "Department of Computer Science and Engineering & CSIT",
+  "location": "Dhaka-1230, Bangladesh",
+  "email": "akramhossain@smuct.ac.bd",
+  "avatar": "/img/personal/personal-image.jpg",
+  "cvLink": "/Akram_cv.pdf",
+  "socials": [
+    { "name": "Email", "url": "mailto:akramhossain@smuct.ac.bd", "icon": "Mail" },
+    { "name": "Google Scholar", "url": "https://scholar.google.com/citations?user=VgYvKn0AAAAJ&hl=en", "icon": "GraduationCap" },
+    { "name": "GitHub", "url": "https://github.com/Akram1871", "icon": "Github" },
+    { "name": "LinkedIn", "url": "https://www.linkedin.com/in/md-akram-hossain-661195199/", "icon": "Linkedin" },
+    { "name": "Twitter", "url": "https://twitter.com/AkramHossain_cu", "icon": "Twitter" }
+  ],
+  "bio": [
+    "I am currently a Lecturer at the Department of Computer Science and Engineering at Shanto-Mariam University of Creative Technology (SMUCT). Prior to joining SMUCT, I served as an Adjunct Lecturer at BGC Trust University Bangladesh.",
+    "Previously, I was a research fellow at the Data Science Research Group (CSECU-DSG) at the University of Chittagong under the supervision of Professor Abu Nowshed Chy. I earned my B.Sc. in Engineering in Computer Science and Engineering from the University of Chittagong.",
+    "My primary research interests encompass Machine Learning and Natural Language Processing, focusing on developing robust, reliable, and intelligent computational models for real-world applications."
+  ],
+  "interests": [
+    "Machine Learning",
+    "Natural Language Processing"
+  ],
+  "currentProjects": [
+    {
+      "title": "AI-Based Hearing Aid System Development",
+      "lab": "IoT and Robotics Lab",
+      "institution": "Shanto-Mariam University of Creative Technology",
+      "period": "January 2025 – Present",
+      "description": "Developing an embedded system for a cognitively-inspired hearing aid integrating NLP and speech enhancement for real-time audio processing on edge devices.",
+      "technologies": ["Python", "TensorFlow", "PyTorch", "ESP32", "Raspberry Pi 5", "IoT Protocols"]
+    }
+  ],
+  "news": [
+    {
+      "date": "2026",
+      "title": "Co-Convener & Technical Lead — SMUCT CSE Fest V3",
+      "description": "Led the technical team managing nationwide registration and payments for 1,000+ participants across 10 segments.",
+      "image": "/img/personal/smuct_logo.png"
+    },
+    {
+      "date": "April 16, 2026",
+      "title": "Founded SMUCT Data Science Research Group (SMUCT-DSG)",
+      "description": "Founded the SMUCT Data Science Research Group (SMUCT-DSG) at Shanto-Mariam University of Creative Technology.",
+      "image": "/img/personal/smuct_logo.png"
+    },
+    {
+      "date": "July 2025",
+      "title": "One short paper accepted in RANLP 2025 Conference",
+      "description": "BiGCAT: A Graph-Based Representation Learning Model with LLM Embeddings for Named Entity Recognition.",
+      "image": "/img/pubs/bigcat.png"
+    },
+    {
+      "date": "December 2024",
+      "title": "New Job: Lecturer, Shanto-Mariam University of Creative Technology",
+      "description": "Joining as a Lecturer at the Department of CSE and CSIT at Shanto-Mariam University of Creative Technology, Bangladesh.",
+      "image": "/img/personal/smuct_logo.png"
+    },
+    {
+      "date": "July 2024",
+      "title": "New Job: Adjunct Lecturer, BGC Trust University Bangladesh",
+      "description": "Joining as an Adjunct Lecturer at the Department of CSE at BGC Trust University Bangladesh.",
+      "image": "/img/personal/bgc_logo.png"
+    },
+    {
+      "date": "February 2024",
+      "title": "One long paper accepted in LREC-COLING 2024 Conference",
+      "description": "BengaliLCP: A Dataset for Lexical Complexity Prediction in the Bengali Texts.",
+      "image": "/img/personal/LREC-2024.png"
+    },
+    {
+      "date": "October 2023",
+      "title": "One paper accepted in Elsevier Natural Language Processing Journal",
+      "description": "Leveraging Contextual Representations with BiLSTM-based Regressor for Lexical Complexity Prediction.",
+      "image": "/img/personal/NLP-2023.jpg"
+    },
+    {
+      "date": "September 2023",
+      "title": "Successfully defended B.Sc. Engineering Thesis",
+      "description": "BiGCAT: An Integrated Graph Neural Network Model for Financial Named Entity Recognition.",
+      "image": "/img/pubs/poster.PNG"
+    },
+    {
+      "date": "August 2023",
+      "title": "Achieved 1st Place (Winning Team) in CheckThat!@CLEF-2023 Subtask 1A Arabic",
+      "description": "CSECU-DSG at CheckThat! 2023: Transformer-based Fusion Approach for Multimodal and Multigenre Check-Worthiness.",
+      "image": "/img/personal/CLEF-2023.jpg"
+    },
+    {
+      "date": "December 2022",
+      "title": "Achieved 2nd Place in ALTA-2022 Shared Task",
+      "description": "Enhancing the DeBERTa Transformers Model for Classifying Sentences from Biomedical Abstracts.",
+      "image": "/img/personal/alta.jpg"
+    },
+    {
+      "date": "December 2022",
+      "title": "Achieved 1st Place (Winning Team) in CASE@EMNLP-2022 Subtask 1",
+      "description": "CSECU-DSG @ Causal News Corpus 2022: Fusion of RoBERTa Transformers Variants for Causal Event Classification.",
+      "image": "/img/personal/case.PNG"
+    },
+    {
+      "date": "July 2022",
+      "title": "Achieved 4th Place in PreTENS@SemEval-2022 Subtask 1",
+      "description": "CSECU-DSG at SemEval-2022 Task 3: Investigating the Taxonomic Relationship Between Two Arguments using Fusion of Multilingual Transformer Models.",
+      "image": "/img/personal/acl-logo.png"
+    },
+    {
+      "date": "December 2020",
+      "title": "Achieved 1st Place (Winning Team) in CEREX@FIRE2020 Task A",
+      "description": "Feature Fusion with Hand-crafted and Transfer Learning Embeddings for Cause-Effect Relation Extraction.",
+      "image": "/img/personal/fire.PNG"
+    },
+    {
+      "date": "March 2020",
+      "title": "New Job: Research Assistant at CSECU-DSG, University of Chittagong",
+      "description": "Joined CSECU-DSG research group under the supervision of Professor Abu Nowshed Chy.",
+      "image": "/img/personal/csecu-dsg_logo.jpg"
+    },
+    {
+      "date": "January 2020",
+      "title": "New Job: Teaching Assistant, University of Chittagong",
+      "description": "Structured Programming Language Lab under the instruction of Dr. Abu Nowshed Chy.",
+      "image": "/img/personal/csecu.jpeg"
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. in Engineering",
+      "field": "Computer Science and Engineering",
+      "institution": "University of Chittagong",
+      "year": "2023"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Lecturer",
+      "department": "Department of Computer Science & Engineering and CSIT",
+      "institution": "Shanto-Mariam University of Creative Technology",
+      "period": "December 2024 – Present"
+    },
+    {
+      "role": "Adjunct Lecturer",
+      "department": "Department of Computer Science & Engineering",
+      "institution": "BGC Trust University Bangladesh",
+      "period": "July 2024 – December 2024"
+    },
+    {
+      "role": "Research Assistant",
+      "department": "Data Science Research Group (CSECU-DSG)",
+      "institution": "University of Chittagong",
+      "period": "April 2020 – December 2024"
+    },
+    {
+      "role": "Teaching Assistant",
+      "department": "C Programming Language Lab",
+      "institution": "University of Chittagong",
+      "period": "January 2020 – July 2020"
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+[
+  {
+    "id": "ranlp-2025-bigcat",
+    "title": "BiGCAT: A Graph-Based Representation Learning Model with LLM Embeddings for Named Entity Recognition",
+    "authors": [
+      { "name": "Md. Akram Hossain", "isSelf": true },
+      { "name": "Abdul Aziz", "isSelf": false },
+      { "name": "Muhammad Anwarul Azim", "isSelf": false },
+      { "name": "Abu Nowshed Chy", "isSelf": false },
+      { "name": "Md Zia Ullah", "isSelf": false },
+      { "name": "Mohammad Khairul Islam", "isSelf": false }
+    ],
+    "venue": "Recent Advances in Natural Language Processing (RANLP)",
+    "year": 2025,
+    "badge": "RANLP '25",
+    "type": "Conference",
+    "thumbnail": "/img/pubs/bigcat.png",
+    "award": null,
+    "abstract": "Named entity recognition from financial text is challenging because of word ambiguity, huge quantity of unknown corporation names, and word abbreviation compared to nonfinancial text. However, models often treat named entities in a linear sequence fashion, which might obscure the model's ability to capture complex hierarchical relationships among the entities. In this paper, we proposed a novel named entity recognition model BiGCAT, which integrates large language model (LLM) embeddings with graph-based representation where the contextual information captured by the language model and graph representation learning can complement each other. The method builds a spanning graph with nodes representing word spans and edges weighted by LLM embeddings, optimized using a combination of graph neural networks, specifically a graph-convolutional network (GCN) and a graph-attention network (GAT). Our proposed model outperformed the state-of-the-art by 10% and 18% on the two publicly available datasets FiNER-ORD and FIN, respectively, in terms of weighted F1 score.",
+    "links": {
+      "paper": "https://acl-bg.org/proceedings/2025/RANLP%202025/pdf/2025.ranlp-1.52.pdf",
+      "code": "https://github.com/Akram1871/BiGCAT-RANLP-2025"
+    }
+  },
+  {
+    "id": "lrec-2024-bengali-lcp",
+    "title": "BengaliLCP: A Dataset for Lexical Complexity Prediction in the Bengali Texts",
+    "authors": [
+      { "name": "Nabila Ayman", "isSelf": false },
+      { "name": "Md. Akram Hossain", "isSelf": true },
+      { "name": "Abdul Aziz", "isSelf": false },
+      { "name": "Rokan Uddin Faruqui", "isSelf": false },
+      { "name": "Abu Nowshed Chy", "isSelf": false }
+    ],
+    "venue": "International Conference on Language Resources and Evaluation (LREC-COLING)",
+    "year": 2024,
+    "badge": "LREC-COLING '24",
+    "type": "Conference",
+    "thumbnail": "/img/pubs/bengali_lcp.JPG",
+    "award": null,
+    "abstract": "Encountering intricate or ambiguous terms within a sentence produces distress for the reader during comprehension. Lexical Complexity Prediction (LCP) deals with predicting the complexity score of a word or a phrase considering its context. This task poses several challenges including ambiguity, context sensitivity, and subjectivity in perceiving complexity. Despite having 300 million native speakers and ranking as the seventh most spoken language in the world, Bengali falls behind in the research on lexical complexity when compared to other languages. To bridge this gap, we introduce the first annotated Bengali dataset that assists in performing the task of LCP in this language. Besides, we propose a transformer-based deep neural approach with a pairwise multi-head attention mechanism and LSTM model to predict the lexical complexity of Bengali tokens.",
+    "links": {
+      "paper": "https://aclanthology.org/2024.lrec-main.200/"
+    }
+  },
+  {
+    "id": "nlp-2023-itrm-lcp",
+    "title": "Leveraging Contextual Representations with BiLSTM-based Regressor for Lexical Complexity Prediction",
+    "authors": [
+      { "name": "Md. Akram Hossain*", "isSelf": true },
+      { "name": "Abdul Aziz*", "isSelf": false },
+      { "name": "Abu Nowshed Chy", "isSelf": false },
+      { "name": "Md Zia Ullah", "isSelf": false },
+      { "name": "Masaki Aono", "isSelf": false }
+    ],
+    "venue": "Natural Language Processing Journal, Vol. 5",
+    "year": 2023,
+    "badge": "NLP '23",
+    "type": "Journal",
+    "thumbnail": "/img/pubs/lcp_journal-2023.jpg",
+    "award": null,
+    "abstract": "Lexical complexity prediction (LCP) determines the complexity level of words or phrases in a sentence. LCP has a significant impact on the enhancement of language translations, readability assessment, and text generation. In this paper, we propose an integrated transformer regressor model named ITRM-LCP to estimate the lexical complexity of words and phrases where diverse contextual features are extracted from various transformer models. A bidirectional LSTM-based regressor module is plugged on top of each transformer to learn long-term dependencies. Experimental findings demonstrate that our ITRM-LCP model obtains 10.2% and 8.2% improvement on the news and Wikipedia corpus of the CWI-2018 dataset compared to the top-performing systems.",
+    "links": {
+      "paper": "https://doi.org/10.1016/j.nlp.2023.100039"
+    }
+  },
+  {
+    "id": "clef-2023-checkthat",
+    "title": "CSECU-DSG at CheckThat! 2023: Transformer-based Fusion Approach for Multimodal and Multigenre Check-Worthiness",
+    "authors": [
+      { "name": "Abdul Aziz", "isSelf": false },
+      { "name": "Md. Akram Hossain", "isSelf": true },
+      { "name": "Abu Nowshed Chy", "isSelf": false }
+    ],
+    "venue": "CLEF Workshop on Check-Worthiness, Subjectivity, Political Bias, Factuality (CheckThat!)",
+    "year": 2023,
+    "badge": "CheckThat! '23",
+    "type": "Workshop",
+    "thumbnail": "/img/pubs/checkthat2023.PNG",
+    "award": "1st place",
+    "abstract": "Check-worthiness is identifying verifiable factual claims present or not in content. To address challenges in identifying factual claims in tweets with multimodal and multigenre settings, we perform fine-tuning on language-specific and vision pretrained transformer models. We add a BiLSTM layer on top of the contextual features and concatenate it with visual features to get an enriched unified representation. Our proposed method achieved competitive performance and obtained 1st place in the multimodal Arabic check-worthiness task.",
+    "links": {
+      "paper": "https://ceur-ws.org/Vol-3497/paper-024.pdf"
+    }
+  },
+  {
+    "id": "case-2023-causal-news",
+    "title": "CSECU-DSG @ Causal News Corpus 2023: Leveraging RoBERTa and DeBERTa Transformer Model with Contrastive Learning for Causal Event Classification",
+    "authors": [
+      { "name": "Md. Akram Hossain", "isSelf": true },
+      { "name": "Abdul Aziz", "isSelf": false },
+      { "name": "Abu Nowshed Chy", "isSelf": false }
+    ],
+    "venue": "CASE @ RANLP",
+    "year": 2023,
+    "badge": "CASE '23",
+    "type": "Workshop",
+    "thumbnail": "/img/pubs/case2023.JPG",
+    "award": "3rd place",
+    "abstract": "Cause-effect relationships play a crucial role in human cognition, and distilling cause-effect relations from text helps in ameliorating causal networks for predictive tasks. In this paper, we demonstrate our participant systems for CASE-2023 shared task 3. We leverage DeBERTa and Twitter-RoBERTa along with weighted average fusion to identify causal text, and unified neural networks with contrastive learning for causal token extraction, achieving 3rd place.",
+    "links": {
+      "paper": "https://aclanthology.org/2023.case-1.15.pdf"
+    }
+  },
+  {
+    "id": "case-2023-hate-speech",
+    "title": "CSECU-DSG @ Multimodal Hate Speech Event Detection 2023: Transformer-based Multimodal Hierarchical Fusion Model For Multimodal Hate Speech Detection",
+    "authors": [
+      { "name": "Abdul Aziz", "isSelf": false },
+      { "name": "Md. Akram Hossain", "isSelf": true },
+      { "name": "Abu Nowshed Chy", "isSelf": false }
+    ],
+    "venue": "CASE @ RANLP",
+    "year": 2023,
+    "badge": "CASE-MHSED '23",
+    "type": "Workshop",
+    "thumbnail": "/img/pubs/casemh2023.JPG",
+    "award": null,
+    "abstract": "Multimodal hate speech detection is a complex task as sarcasm and both image and text modalities are involved. We propose a transformer-based multimodal hierarchical fusion model to detect hate speech present in visual and textual content. We jointly fine-tune language and vision models, using BiLSTM layers and multi-sample dropout to achieve 5th place among all participants.",
+    "links": {
+      "paper": "https://aclanthology.org/2023.case-1.14.pdf"
+    }
+  },
+  {
+    "id": "semeval-2023-human-values",
+    "title": "CSECU-DSG at SemEval-2023 Task 4: Fine-tuning DeBERTa Transformer Model with Cross-fold Training and Multi-sample Dropout for Human Values Identification",
+    "authors": [
+      { "name": "Md. Akram Hossain*", "isSelf": true },
+      { "name": "Abdul Aziz*", "isSelf": false },
+      { "name": "Abu Nowshed Chy", "isSelf": false }
+    ],
+    "venue": "SemEval Workshop on Multi-lingual Human Value Detection in Texts (ValueEval)",
+    "year": 2023,
+    "badge": "SemEval '23",
+    "type": "Workshop",
+    "thumbnail": "/img/pubs/valueval2023.PNG",
+    "award": null,
+    "abstract": "Human values identification from argument sets is becoming a prominent area in argument mining. We propose a fine-tuned DeBERTa transformer-based classification approach to identify human value categories, utilizing cross-fold training and multi-sample dropout for improved generalization.",
+    "links": {
+      "paper": "https://aclanthology.org/2023.semeval-1.274.pdf"
+    }
+  },
+  {
+    "id": "alta-2022-biomedical",
+    "title": "Enhancing the DeBERTa Transformers Model for Classifying Sentences from Biomedical Abstracts",
+    "authors": [
+      { "name": "Md. Akram Hossain*", "isSelf": true },
+      { "name": "Abdul Aziz*", "isSelf": false },
+      { "name": "Abu Nowshed Chy", "isSelf": false }
+    ],
+    "venue": "ALTA Workshop on Evidence-Based Medicine (EBM)",
+    "year": 2022,
+    "badge": "ALTA '22",
+    "type": "Workshop",
+    "thumbnail": "/img/pubs/alta2022.PNG",
+    "award": "2nd place",
+    "abstract": "Evidence-based medicine requires mapping biomedical abstracts into predefined categories. We propose a fine-tuned DeBERTa transformer model with multi-sample dropout and 5-fold cross-validation, achieving 2nd place in the ALTA 2022 shared task.",
+    "links": {
+      "paper": "https://aclanthology.org/2022.alta-1.21.pdf"
+    }
+  },
+  {
+    "id": "case-2022-causal-event",
+    "title": "CSECU-DSG @ Causal News Corpus 2022: Fusion of RoBERTa Transformers Variants for Causal Event Classification",
+    "authors": [
+      { "name": "Md. Akram Hossain*", "isSelf": true },
+      { "name": "Abdul Aziz*", "isSelf": false },
+      { "name": "Abu Nowshed Chy", "isSelf": false }
+    ],
+    "venue": "CASE @ EMNLP | Automated Extraction of Socio-political Events",
+    "year": 2022,
+    "badge": "CASE '22",
+    "type": "Workshop",
+    "thumbnail": "/img/pubs/case2021.PNG",
+    "award": "1st place",
+    "abstract": "Identifying cause-effect relationships in sentences is fundamental for natural language inference. We propose a unified neural model fusing RoBERTa and Twitter-RoBERTa via weighted arithmetic mean, securing 1st place in the shared task.",
+    "links": {
+      "paper": "https://aclanthology.org/2022.case-1.19.pdf"
+    }
+  },
+  {
+    "id": "semeval-2022-pretens",
+    "title": "CSECU-DSG at SemEval-2022 Task 3: Investigating the Taxonomic Relationship Between Two Arguments using Fusion of Multilingual Transformer Models",
+    "authors": [
+      { "name": "Md. Akram Hossain*", "isSelf": true },
+      { "name": "Abdul Aziz*", "isSelf": false },
+      { "name": "Abu Nowshed Chy", "isSelf": false }
+    ],
+    "venue": "SemEval 2022 Task 3: PreTENS",
+    "year": 2022,
+    "badge": "SemEval '22",
+    "type": "Workshop",
+    "thumbnail": "/img/pubs/pretens2022.PNG",
+    "award": "4th place",
+    "abstract": "Determining taxonomic relations between nominal arguments using multilingual transformer ensembles including XLM-RoBERTa and mBERT, ranked 4th place.",
+    "links": {
+      "paper": "https://aclanthology.org/2022.semeval-1.32.pdf"
+    }
+  },
+  {
+    "id": "semeval-2022-multiconer",
+    "title": "CSECU-DSG at SemEval-2022 Task 11: Identifying the Multilingual Complex Named Entity in Text Using Stacked Embeddings and Transformer based Approach",
+    "authors": [
+      { "name": "Md. Akram Hossain*", "isSelf": true },
+      { "name": "Abdul Aziz*", "isSelf": false },
+      { "name": "Abu Nowshed Chy", "isSelf": false }
+    ],
+    "venue": "SemEval 2022 Task 11: MultiCoNER",
+    "year": 2022,
+    "badge": "MultiCoNER '22",
+    "type": "Workshop",
+    "thumbnail": "/img/pubs/multiconer2022.PNG",
+    "award": null,
+    "abstract": "Complex and ambiguous named entity recognition using BiLSTM-CRF with stacked-embeddings and transformer architectures.",
+    "links": {
+      "paper": "https://aclanthology.org/2022.semeval-1.213.pdf"
+    }
+  },
+  {
+    "id": "semeval-2021-lcp",
+    "title": "CSECU-DSG at SemEval-2021 Task 1: Fusion of Transformer Models for Lexical Complexity Prediction",
+    "authors": [
+      { "name": "Md. Akram Hossain*", "isSelf": true },
+      { "name": "Abdul Aziz*", "isSelf": false },
+      { "name": "Abu Nowshed Chy", "isSelf": false }
+    ],
+    "venue": "SemEval 2021 Task 1: LCP",
+    "year": 2021,
+    "badge": "SemEval '21",
+    "type": "Workshop",
+    "thumbnail": "/img/pubs/lcp2021.PNG",
+    "award": null,
+    "abstract": "Sentence pair regression approach fusing BERT and RoBERTa for lexical complexity prediction.",
+    "links": {
+      "paper": "https://aclanthology.org/2021.semeval-1.80.pdf"
+    }
+  },
+  {
+    "id": "fire-2020-cerex",
+    "title": "Feature Fusion with Hand-crafted and Transfer Learning Embeddings for Cause-Effect Relation Extraction",
+    "authors": [
+      { "name": "Md. Akram Hossain*", "isSelf": true },
+      { "name": "Abdul Aziz*", "isSelf": false },
+      { "name": "Abu Nowshed Chy", "isSelf": false }
+    ],
+    "venue": "CEREX @ FIRE | Cause Effect Relation Extraction",
+    "year": 2020,
+    "badge": "FIRE '20",
+    "type": "Workshop",
+    "thumbnail": "/img/pubs/cerex2020.PNG",
+    "award": "1st place",
+    "abstract": "Feature-based classification model fusing handcrafted linguistic features and transfer learning embeddings for causal relation extraction, achieving 1st place.",
+    "links": {
+      "paper": "https://ceur-ws.org/Vol-2826/T6-2.pdf"
+    }
+  },
+  {
+    "id": "thesis-2023-bigcat-poster",
+    "title": "BiGCAT: An Integrated Graph Neural Network Model for Financial Named Entity Recognition",
+    "authors": [
+      { "name": "Md. Akram Hossain", "isSelf": true },
+      { "name": "Muhammad Anwarul Azim", "isSelf": false },
+      { "name": "Abu Nowshed Chy", "isSelf": false },
+      { "name": "Mohammad Khairul Islam", "isSelf": false }
+    ],
+    "venue": "B.Sc. Engineering Thesis Presentation, Dept. of CSE, University of Chittagong",
+    "year": 2023,
+    "badge": "Poster '23",
+    "type": "Poster",
+    "thumbnail": "/img/pubs/poster.PNG",
+    "award": null,
+    "abstract": "Predefence poster presentation examining graph neural network integration with transformers for financial named entity recognition.",
+    "links": {
+      "paper": null
+    }
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "courseCode": "THESIS-UG",
+    "title": "Undergraduate Thesis Supervision",
+    "institution": "Shanto-Mariam University of Creative Technology",
+    "semester": "2026 – Present",
+    "enrolled": "5 Research Tracks (13 Supervised Students)",
+    "topics": "Multimodal Medical Visual Question Answering (Med-VQA), Vision-Language Models, Clinical Diagnostics, Applied Machine Learning, Computational Data Science"
+  },
+  {
+    "courseCode": "CSE 3298",
+    "title": "Software Engineering Lab",
+    "institution": "Shanto-Mariam University of Creative Technology",
+    "semester": "Fall & Summer 2025",
+    "enrolled": "Sections A & C (35 Capstone Teams)",
+    "topics": "Agile Development, Mobile & Web Architecture, Flutter, Supabase, Firebase, Clean Architecture, Team Collaboration"
+  },
+  {
+    "courseCode": "CSE 3203 / CSE 4252",
+    "title": "Machine Learning (Theory & Lab)",
+    "institution": "Shanto-Mariam University of Creative Technology",
+    "semester": "Summer 2026",
+    "enrolled": "46 Students",
+    "topics": "Supervised Learning, Unsupervised Learning, Neural Networks, Transformer Architectures, Model Training & Evaluation, Hands-on Lab Pipelines"
+  },
+  {
+    "courseCode": "CSE 4145",
+    "title": "Digital Image Processing",
+    "institution": "Shanto-Mariam University of Creative Technology",
+    "semester": "Summer 2026",
+    "enrolled": "95 Students",
+    "topics": "Image Fundamentals, Image Enhancement, Spatial Filtering, Frequency Domain, Morphological Processing, Segmentation"
+  }
+]

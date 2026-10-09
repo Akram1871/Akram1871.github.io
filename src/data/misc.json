@@ -1,0 +1,54 @@
+{
+  "gallery": [
+    {
+      "title": "Research Day Presentation - Oral Session",
+      "caption": "Presenting research findings during the University Research Day oral session.",
+      "image": "images/research_day_presentation 1.jpg",
+      "date": "2026"
+    },
+    {
+      "title": "Research Day Presentation - Q&A Session",
+      "caption": "Discussing methodology and research implications with faculty evaluators.",
+      "image": "images/research_day_presentation 2.jpg",
+      "date": "2026"
+    },
+    {
+      "title": "Receiving Certificate of Appreciation",
+      "caption": "Awarded Certificate of Appreciation for research contributions at Research Day.",
+      "image": "images/research_day_presentation receive certificate.jpg",
+      "date": "2026"
+    },
+    {
+      "title": "FutureNation Summit Participation",
+      "caption": "Attending the FutureNation Summit on youth tech empowerment and employment.",
+      "image": "images/future nation summit.jpg",
+      "date": "2026"
+    }
+  ],
+  "videos": [
+    {
+      "title": "BiGCAT: A Graph-Based Representation Learning Model with LLM Embeddings for Named Entity Recognition",
+      "venue": "RANLP 2025",
+      "youtubeId": "HmwrSjzK030",
+      "url": "https://www.youtube.com/watch?v=HmwrSjzK030",
+      "embedUrl": "https://www.youtube.com/embed/HmwrSjzK030",
+      "description": "Oral presentation on BiGCAT, integrating graph representation learning with large language model embeddings for entity recognition."
+    },
+    {
+      "title": "Enhancing the DeBERTa Transformers Model for Classifying Sentences from Biomedical Abstracts",
+      "venue": "ALTA 2022",
+      "youtubeId": "PzPqJUHSnPk",
+      "url": "https://www.youtube.com/watch?v=PzPqJUHSnPk&t=1200s",
+      "embedUrl": "https://www.youtube.com/embed/PzPqJUHSnPk?start=1200",
+      "description": "Presentation at the Australasian Language Technology Association (ALTA) Workshop Shared Task."
+    },
+    {
+      "title": "Feature Fusion with Hand-crafted and Transfer Learning Embeddings for Cause-Effect Relation Extraction",
+      "venue": "FIRE 2020",
+      "youtubeId": "xETcHNbFtr8",
+      "url": "https://www.youtube.com/watch?v=xETcHNbFtr8&t=14632s",
+      "embedUrl": "https://www.youtube.com/embed/xETcHNbFtr8?start=14632",
+      "description": "Oral talk at the Forum for Information Retrieval Evaluation (FIRE) on causal relationship extraction."
+    }
+  ]
+}

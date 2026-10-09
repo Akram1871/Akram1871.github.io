@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Sidratul Muntaha Upoma",
+    "topic": "Multimodal medical visual question answering",
+    "period": "February 2026 – present"
+  },
+  {
+    "team": "Team A",
+    "students": [
+      "Nusrat Jahan",
+      "Mohammad Mainul Islam",
+      "MD Roman Hossain"
+    ],
+    "topic": "Customer purchase intent classification",
+    "period": "August 2026 – present"
+  },
+  {
+    "team": "Team B",
+    "students": [
+      "MD Haisam Hoque",
+      "Eka Mondol Tithi",
+      "Jannatul Tanzela"
+    ],
+    "topic": "Hate speech detection",
+    "period": "August 2026 – present"
+  },
+  {
+    "team": "Team C",
+    "students": [
+      "Imtiaz Mahmud",
+      "MD Rafsan Zani Bhuyan",
+      "Kanij Suborna Riya"
+    ],
+    "topic": "Skin cancer detection",
+    "period": "August 2026 – present"
+  },
+  {
+    "team": "Team D",
+    "students": [
+      "Md Soliman Kabir",
+      "Md Shakil Ahamed",
+      "Md. Al-amin Sujon"
+    ],
+    "topic": "Bangla VQA for child education",
+    "period": "August 2026 – present"
+  }
+]

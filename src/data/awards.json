@@ -1,0 +1,56 @@
+{
+  "awards": [
+    {
+      "rank": "1st Place",
+      "competition": "CheckThat! @ CLEF-2023",
+      "detail": "CSECU-DSG at CheckThat! 2023: Transformer-based Fusion Approach for Multimodal and Multigenre Check-Worthiness"
+    },
+    {
+      "rank": "1st Place",
+      "competition": "CASE @ EMNLP-2022",
+      "detail": "CSECUDSG@Causal News Corpus 2022: Fusion of RoBERTa Transformers Variants for Causal Event Classification"
+    },
+    {
+      "rank": "1st Place",
+      "competition": "CEREX @ FIRE-2020",
+      "detail": "Feature Fusion with Hand-crafted and Transfer Learning Embeddings for Cause-Effect Relation Extraction"
+    },
+    {
+      "rank": "2nd Place",
+      "competition": "ALTA-2022 Shared Task",
+      "detail": "Enhancing the DeBERTa Transformers Model for Classifying Sentences from Biomedical Abstracts"
+    },
+    {
+      "rank": "3rd Place",
+      "competition": "CASE @ RANLP-2023",
+      "detail": "CSECU-DSG @ Causal News Corpus 2023: Leveraging RoBERTa and DeBERTa with Contrastive Learning"
+    },
+    {
+      "rank": "4th Place",
+      "competition": "PreTENS @ SemEval-2022",
+      "detail": "CSECU-DSG at SemEval-2022 Task 3: Investigating Taxonomic Relationships using Multilingual Transformers"
+    }
+  ],
+  "services": [
+    {
+      "role": "Reviewer",
+      "items": [
+        {
+          "name": "International Conference on Innovations in Science, Engineering and Technology (ICISET 2026)",
+          "url": "https://iciset.iiuc.ac.bd/"
+        },
+        "Recent Advances in Natural Language Processing (RANLP 2025)",
+        "Semantic Evaluation (SemEval 2020-2023, 2025)",
+        "AACL-IJCNLP 2023 (Sub-reviewer)"
+      ]
+    },
+    {
+      "role": "Conference & Event Organization",
+      "items": [
+        "Co-Convener & Technical Lead — SMUCT CSE Fest V3 (2026): Managed registration & payments for 1,000+ participants across 10 segments",
+        "The 44th International ACM SIGIR Conference (SIGIR-2021) — Student Volunteer",
+        "Intra-departmental Competitive Programming Contest (2022 and 2023) — Organizer"
+      ]
+    }
+  ]
+}

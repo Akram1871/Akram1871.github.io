@@ -1,0 +1,488 @@
+[
+  {
+    "id": "ml-win26-10a-a",
+    "title": "Non-Invasive Kidney Stone Detection Using Machine Learning",
+    "course": "CSE 4252: Machine Learning Lab",
+    "courseCode": "CSE 4252",
+    "term": "Winter 2026",
+    "section": "Section 10A",
+    "group": "Group A",
+    "domain": "Healthcare AI & Clinical Diagnostics",
+    "description": "Predictive diagnostic system leveraging laboratory biomarkers and urinalysis data to detect renal calculi non-invasively through supervised classification algorithms.",
+    "deliverables": [
+      "Clinical Dataset",
+      "Jupyter Notebooks",
+      "Research Slides"
+    ],
+    "students": [
+      {
+        "name": "MD.Naim Ahmed",
+        "id": "222071030"
+      },
+      {
+        "name": "Sachin Kumar Das",
+        "id": "222071033"
+      },
+      {
+        "name": "Kanis Suborna",
+        "id": "222071031"
+      },
+      {
+        "name": "Sakibul Alam Shafin",
+        "id": "222071038"
+      },
+      {
+        "name": "MD. Ashfaq Khan",
+        "id": "222072001"
+      }
+    ]
+  },
+  {
+    "id": "ml-win26-10a-b",
+    "title": "Machine Learning Framework for Comparative Analysis & Forecasting of Stock Price Prediction Models",
+    "course": "CSE 4252: Machine Learning Lab",
+    "courseCode": "CSE 4252",
+    "term": "Winter 2026",
+    "section": "Section 10A",
+    "group": "Group B",
+    "domain": "Financial Time-Series & Web Analytics",
+    "description": "A comparative modeling and forecasting pipeline applied to Dhaka Stock Exchange (DSE) price series, featuring interactive web-based financial analytics and evaluation.",
+    "deliverables": [
+      "Comprehensive Project Report",
+      "DSE Dataset",
+      "Web Visualizer",
+      "Final Presentation"
+    ],
+    "students": [
+      {
+        "name": "Aliar Rahman Sajib",
+        "id": "222071043"
+      },
+      {
+        "name": "Ashraful Haq Rifat",
+        "id": "222071016"
+      },
+      {
+        "name": "Fatema Meem Imam",
+        "id": "222071040"
+      }
+    ]
+  },
+  {
+    "id": "ml-win26-10a-c",
+    "title": "AI Farm Robot: Vision-Guided Agricultural Automation & Fruit Classification",
+    "course": "CSE 4252: Machine Learning Lab",
+    "courseCode": "CSE 4252",
+    "term": "Winter 2026",
+    "section": "Section 10A",
+    "group": "Group C",
+    "domain": "AgriTech & Computer Vision",
+    "description": "Autonomous agricultural robot prototype equipped with computer vision for fruit ripeness classification, yield tracking, and farm automation in real-world environments.",
+    "deliverables": [
+      "Full Project Report",
+      "Field Image Dataset",
+      "Milestone Presentations",
+      "Demonstration Video"
+    ],
+    "students": [
+      {
+        "name": "Abid Nur Abdullah",
+        "id": "222071021"
+      },
+      {
+        "name": "Jannatul Ferdous",
+        "id": "222071036"
+      },
+      {
+        "name": "Shehjin Akter Niha",
+        "id": "222071037"
+      },
+      {
+        "name": "Huzaifa",
+        "id": "222071048"
+      },
+      {
+        "name": "Meher Afroj Mim",
+        "id": "222071056"
+      },
+      {
+        "name": "Nibirh Pondit",
+        "id": "222061002"
+      }
+    ]
+  },
+  {
+    "id": "ml-win26-10a-d",
+    "title": "Smart AI Interactive Billboard: Face Swap & Emotion-Aware Advertisement System",
+    "course": "CSE 4252: Machine Learning Lab",
+    "courseCode": "CSE 4252",
+    "term": "Winter 2026",
+    "section": "Section 10A",
+    "group": "Group D",
+    "domain": "Edge AI & Interactive Vision",
+    "description": "Real-time interactive outdoor display using lightweight MobileNetV2 neural networks to perform audience demographic analysis, emotion sensing, and responsive content delivery.",
+    "deliverables": [
+      "MobileNetV2 Training Pipeline",
+      "Hardware/Software Integration Deck",
+      "Dataset",
+      "Presentation Deck"
+    ],
+    "students": [
+      {
+        "name": "Antor Hawlader",
+        "id": "222071024"
+      },
+      {
+        "name": "Md. Shawon Hosse",
+        "id": "222071015"
+      },
+      {
+        "name": "Sajib Hossain Shovo",
+        "id": "222071028"
+      },
+      {
+        "name": "Tamim Chad Likhon",
+        "id": "222071045"
+      },
+      {
+        "name": "Md. S. M. Koucher Ahmed",
+        "id": "222071050"
+      }
+    ]
+  },
+  {
+    "id": "ml-win26-10a-e",
+    "title": "Multimodal Deception Detection: Multimodal Lie Detection & Arousal Tracking",
+    "course": "CSE 4252: Machine Learning Lab",
+    "courseCode": "CSE 4252",
+    "term": "Winter 2026",
+    "section": "Section 10A",
+    "group": "Group E",
+    "domain": "Biometric Signal Processing & Psychology AI",
+    "description": "Experimental lie detection pipeline combining synchronized optical video feature tracking and physiological polygraph sensor metrics to quantify autonomic nervous system stress.",
+    "deliverables": [
+      "Multimodal System Architecture PDF",
+      "Subject Polygraph Sensor Data"
+    ],
+    "students": [
+      {
+        "name": "MD Tariqul Huda",
+        "id": "222071004"
+      },
+      {
+        "name": "Ratul Hasan Jihad",
+        "id": "222061003"
+      },
+      {
+        "name": "Shuhinuzzaman Tushan",
+        "id": "222071032"
+      },
+      {
+        "name": "Md. Farhad Hosen",
+        "id": "222071060"
+      },
+      {
+        "name": "MD Jamil Hosain",
+        "id": "222071023"
+      }
+    ]
+  },
+  {
+    "id": "ml-win26-10a-g",
+    "title": "Health Risk Early Prediction System: Smart Wristband & Meteorological ML Integration",
+    "course": "CSE 4252: Machine Learning Lab",
+    "courseCode": "CSE 4252",
+    "term": "Winter 2026",
+    "section": "Section 10A",
+    "group": "Group G",
+    "domain": "IoT & Wearable Health Informatics",
+    "description": "Early preventive health risk scoring system that correlates wearable biometric wristband metrics with field-collected microclimate and weather indicators.",
+    "deliverables": [
+      "Field Health Dataset",
+      "EDA & Feature Engineering Deck",
+      "Final Presentation"
+    ],
+    "students": [
+      {
+        "name": "Trisha Mony",
+        "id": "222071017"
+      },
+      {
+        "name": "Abul Hasanat",
+        "id": "193071017"
+      },
+      {
+        "name": "Shakil Mia",
+        "id": "222071025"
+      },
+      {
+        "name": "MD Shahidul Islam Pranto",
+        "id": "222061005"
+      },
+      {
+        "name": "Lamisa anwar Rafisa",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "ml-win26-9b-b1",
+    "title": "AlphaQuest: Handwritten Character Classification (Feature Engineering vs. Deep Learning)",
+    "course": "CSE 4252: Machine Learning Lab",
+    "courseCode": "CSE 4252",
+    "term": "Winter 2026",
+    "section": "Section 9B",
+    "group": "Team B1",
+    "domain": "Optical Character Recognition & Educational AI",
+    "description": "Comparative classification benchmark evaluating classical feature extraction (HOG, contour analysis) versus deep convolutional networks across a 63-class alphanumeric character dataset.",
+    "deliverables": [
+      "Cleaned 63-Class Dataset",
+      "Presentation Deck"
+    ],
+    "students": [
+      {
+        "name": "Solaiman Kabir",
+        "id": "223071082"
+      },
+      {
+        "name": "Md Ebrahim",
+        "id": "223071104"
+      },
+      {
+        "name": "Md Shakil Ahamed",
+        "id": "223071129"
+      },
+      {
+        "name": "Farzana Fahmida Meam",
+        "id": "223071130"
+      },
+      {
+        "name": "Khairul Alam(CSIT)",
+        "id": "223061001"
+      }
+    ]
+  },
+  {
+    "id": "ml-win26-9b-b2",
+    "title": "Plant Disease Detection: A Modern Diagnostic Framework Using Machine Learning",
+    "course": "CSE 4252: Machine Learning Lab",
+    "courseCode": "CSE 4252",
+    "term": "Winter 2026",
+    "section": "Section 9B",
+    "group": "Team B2",
+    "domain": "Agricultural Diagnostics & Plant Pathology",
+    "description": "Computer vision framework for automated leaf pathology identification and lesion segmentation to assist smallholder farmers in early crop disease intervention.",
+    "deliverables": [
+      "1,500+ Sample Leaf Dataset",
+      "Milestone Reports",
+      "Slide Deck"
+    ],
+    "students": [
+      {
+        "name": "Imtiaz Mahmud",
+        "id": "223071103"
+      },
+      {
+        "name": "Roman Hossain",
+        "id": "223071160"
+      },
+      {
+        "name": "Md Rafsan Bhuyan",
+        "id": "223071170"
+      },
+      {
+        "name": "Kaniz Suborna Ria",
+        "id": "223071175"
+      },
+      {
+        "name": "Sabbir Hossain Rari",
+        "id": "223071173"
+      }
+    ]
+  },
+  {
+    "id": "ml-win26-9b-b4",
+    "title": "CareerPath AI: AI-Based Career Prediction and Guidance System for Bangladesh",
+    "course": "CSE 4252: Machine Learning Lab",
+    "courseCode": "CSE 4252",
+    "term": "Winter 2026",
+    "section": "Section 9B",
+    "group": "Team B4",
+    "domain": "EdTech & Decision Support Systems",
+    "description": "Data-driven career trajectory recommender predicting academic and professional streams tailored to Bangladeshi high school and tertiary educational realities.",
+    "deliverables": [
+      "Full Presentation Deck",
+      "Survey Dataset",
+      "Prototype System Design"
+    ],
+    "students": [
+      {
+        "name": "Sowrov Dey",
+        "id": "223071102"
+      },
+      {
+        "name": "Anika Tasnia Sadia",
+        "id": "223071119"
+      },
+      {
+        "name": "Aatifaa Jyoti",
+        "id": "223071080"
+      },
+      {
+        "name": "Abdur Rahaman Shishir",
+        "id": "223071092"
+      },
+      {
+        "name": "Nazmul Haque",
+        "id": "223071133"
+      }
+    ]
+  },
+  {
+    "id": "ml-win26-9b-b5",
+    "title": "Detection of Hate Speech in Bangla Social Media Text & Dialects Using Machine Learning",
+    "course": "CSE 4252: Machine Learning Lab",
+    "courseCode": "CSE 4252",
+    "term": "Winter 2026",
+    "section": "Section 9B",
+    "group": "Team B5",
+    "domain": "Natural Language Processing & Computational Linguistics",
+    "description": "Low-resource NLP classification pipeline specifically engineered to identify toxic content, abusive phrasing, and regional dialect variations in Bengali social platforms.",
+    "deliverables": [
+      "Bengali NLP Dataset",
+      "Jupyter Training Notebooks",
+      "Dialect NLP Presentation"
+    ],
+    "students": [
+      {
+        "name": "Md Haisam Haque",
+        "id": "223071114"
+      },
+      {
+        "name": "Aka Mondol Tithi",
+        "id": "223071122"
+      },
+      {
+        "name": "Jannatul Ferdaus Tanzela",
+        "id": "223071140"
+      },
+      {
+        "name": "Shahadat Islam Khan",
+        "id": "223071161"
+      },
+      {
+        "name": "Fatema Ahmed Sadia",
+        "id": "223071148"
+      }
+    ]
+  },
+  {
+    "id": "ml-win26-9b-b7",
+    "title": "Bengali Handwritten Character Recognition System",
+    "course": "CSE 4252: Machine Learning Lab",
+    "courseCode": "CSE 4252",
+    "term": "Winter 2026",
+    "section": "Section 9B",
+    "group": "Team B7",
+    "domain": "Computer Vision & Bengali OCR",
+    "description": "Stratified character recognition system for native script characters and compound graphemes, utilizing data augmentation and convolutional neural networks.",
+    "deliverables": [
+      "Character Image Dataset",
+      "Cleaned CSV Datasets",
+      "Milestone Slide Decks"
+    ],
+    "students": [
+      {
+        "name": "Md Nahid",
+        "id": "223071128"
+      },
+      {
+        "name": "Alamin Sujon",
+        "id": "223071147"
+      },
+      {
+        "name": "Mahin Ahmed Dipta",
+        "id": "223071154"
+      },
+      {
+        "name": "Ferdause Al Mahmud",
+        "id": "223071156"
+      },
+      {
+        "name": "Asikur Rahman Anik",
+        "id": "223071159"
+      }
+    ]
+  },
+  {
+    "id": "ml-win26-9b-b8",
+    "title": "Smart CCTV for Personal Safety: Real-Time Distress Gesture Recognition",
+    "course": "CSE 4252: Machine Learning Lab",
+    "courseCode": "CSE 4252",
+    "term": "Winter 2026",
+    "section": "Section 9B",
+    "group": "Team B8",
+    "domain": "Computer Vision & Public Safety",
+    "description": "Intelligent surveillance prototype designed to recognize silent universal hand distress signals in real time and automatically trigger secure remote notifications.",
+    "deliverables": [
+      "Gesture Detection Python Engine",
+      "System Prototype Presentation"
+    ],
+    "students": [
+      {
+        "name": "Shamsun Nahar Neha",
+        "id": "223071142"
+      },
+      {
+        "name": "Afinur Binte Aziz",
+        "id": "223071172"
+      },
+      {
+        "name": "Imtiaz Mahmud",
+        "id": "223061002"
+      },
+      {
+        "name": "Md Niham Alamgir",
+        "id": "223061006"
+      },
+      {
+        "name": "Md Kayum",
+        "id": "223061008"
+      }
+    ]
+  },
+  {
+    "id": "ml-win26-9b-b9",
+    "title": "AI-Based Smart Healthcare Recommendation and Triage System",
+    "course": "CSE 4252: Machine Learning Lab",
+    "courseCode": "CSE 4252",
+    "term": "Winter 2026",
+    "section": "Section 9B",
+    "group": "Team B9",
+    "domain": "Healthcare Informatics & Expert Systems",
+    "description": "Intelligent medical advisory application that analyses patient symptom profiles to recommend triage urgency levels and relevant specialist consultations.",
+    "deliverables": [
+      "Clinical Survey Dataset",
+      "Comprehensive Technical Report",
+      "Presentation Slides"
+    ],
+    "students": [
+      {
+        "name": "Nusrat Jahan",
+        "id": "223071138"
+      },
+      {
+        "name": "Mohammad Mainul Islam",
+        "id": "223071137"
+      },
+      {
+        "name": "Rinky",
+        "id": "223071164"
+      },
+      {
+        "name": "Shyon de",
+        "id": "223071171"
+      }
+    ]
+  }
+]
