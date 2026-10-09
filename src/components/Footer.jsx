@@ -21,9 +21,6 @@ export default function Footer() {
           <p className="footer-copy">
             © {new Date().getFullYear()} {profileData.name}. All rights reserved.
           </p>
-          <p className="footer-tech">
-            Built with React & Vite. Deployed automatically to GitHub Pages.
-          </p>
         </div>
       </div>
     </footer>
