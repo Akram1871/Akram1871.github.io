@@ -5,7 +5,7 @@ import mlProjectsData from '../data/mlProjects.json';
 import thesisStudentsData from '../data/thesisStudents.json';
 
 export default function StudentProjects() {
-  const [activeCourse, setActiveCourse] = useState('ALL'); // 'ALL' | 'THESIS' | 'ML' | 'SE'
+  const [activeCourse, setActiveCourse] = useState('THESIS'); // 'THESIS' | 'ML' | 'SE'
   const [selectedSection, setSelectedSection] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -26,7 +26,7 @@ export default function StudentProjects() {
     if (activeCourse === 'THESIS') return thesisList;
     if (activeCourse === 'ML') return mlList;
     if (activeCourse === 'SE') return seList;
-    return [...thesisList, ...mlList, ...seList];
+    return thesisList;
   }, [activeCourse]);
 
   // Dynamic available sections
@@ -87,15 +87,6 @@ export default function StudentProjects() {
       <div className="course-tabs-container">
         <button
           type="button"
-          className={`course-tab-btn ${activeCourse === 'ALL' ? 'active' : ''}`}
-          onClick={() => setActiveCourse('ALL')}
-        >
-          <span>All Research & Projects</span>
-          <span className="tab-badge">{thesisStudentsData.length + mlProjectsData.length + seProjectsData.length}</span>
-        </button>
-
-        <button
-          type="button"
           className={`course-tab-btn ${activeCourse === 'THESIS' ? 'active' : ''}`}
           onClick={() => setActiveCourse('THESIS')}
         >
@@ -125,52 +116,54 @@ export default function StudentProjects() {
         </button>
       </div>
 
-      {/* Filter and Search Bar */}
-      <div className="student-projects-toolbar">
-        <div className="filter-pills" role="tablist" aria-label="Section filters">
-          {sections.map((sec) => {
-            const count =
-              sec === 'All'
-                ? allProjects.length
-                : allProjects.filter((p) => p.section === sec).length;
-            return (
-              <button
-                key={sec}
-                type="button"
-                role="tab"
-                aria-selected={selectedSection === sec}
-                className={`filter-pill ${selectedSection === sec ? 'active' : ''}`}
-                onClick={() => setSelectedSection(sec)}
-              >
-                {sec}
-                <span className="pill-count">{count}</span>
-              </button>
-            );
-          })}
-        </div>
+      {/* Filter and Search Bar for Lab Projects */}
+      {activeCourse !== 'THESIS' && (
+        <div className="student-projects-toolbar">
+          <div className="filter-pills" role="tablist" aria-label="Section filters">
+            {sections.map((sec) => {
+              const count =
+                sec === 'All'
+                  ? allProjects.length
+                  : allProjects.filter((p) => p.section === sec).length;
+              return (
+                <button
+                  key={sec}
+                  type="button"
+                  role="tab"
+                  aria-selected={selectedSection === sec}
+                  className={`filter-pill ${selectedSection === sec ? 'active' : ''}`}
+                  onClick={() => setSelectedSection(sec)}
+                >
+                  {sec}
+                  <span className="pill-count">{count}</span>
+                </button>
+              );
+            })}
+          </div>
 
-        <div className="search-box">
-          <Search size={16} className="search-icon" />
-          <input
-            type="text"
-            className="search-input"
-            placeholder="Search by topic, keyword, or student name/ID..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            aria-label="Search student projects"
-          />
-          {searchQuery && (
-            <button
-              type="button"
-              className="search-clear-btn"
-              onClick={() => setSearchQuery('')}
-              title="Clear search"
-            >
-              ×
-            </button>
-          )}
+          <div className="search-box">
+            <Search size={16} className="search-icon" />
+            <input
+              type="text"
+              className="search-input"
+              placeholder="Search by topic, keyword, or student name/ID..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              aria-label="Search student projects"
+            />
+            {searchQuery && (
+              <button
+                type="button"
+                className="search-clear-btn"
+                onClick={() => setSearchQuery('')}
+                title="Clear search"
+              >
+                ×
+              </button>
+            )}
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Main Display: Boyd-style Academic Listing for Thesis, or Card Grid for Projects */}
       {activeCourse === 'THESIS' ? (
