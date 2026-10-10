@@ -116,9 +116,9 @@ export default function StudentProjects() {
         </button>
       </div>
 
-      {/* Filter and Search Bar for Lab Projects */}
-      {activeCourse !== 'THESIS' && (
-        <div className="student-projects-toolbar">
+      {/* Filter and Search Bar */}
+      <div className="student-projects-toolbar">
+        {sections.length > 1 && (
           <div className="filter-pills" role="tablist" aria-label="Section filters">
             {sections.map((sec) => {
               const count =
@@ -140,30 +140,30 @@ export default function StudentProjects() {
               );
             })}
           </div>
+        )}
 
-          <div className="search-box">
-            <Search size={16} className="search-icon" />
-            <input
-              type="text"
-              className="search-input"
-              placeholder="Search by topic, keyword, or student name/ID..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              aria-label="Search student projects"
-            />
-            {searchQuery && (
-              <button
-                type="button"
-                className="search-clear-btn"
-                onClick={() => setSearchQuery('')}
-                title="Clear search"
-              >
-                ×
-              </button>
-            )}
-          </div>
+        <div className="search-box">
+          <Search size={16} className="search-icon" />
+          <input
+            type="text"
+            className="search-input"
+            placeholder="Search by topic, keyword, or student name..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            aria-label="Search student projects"
+          />
+          {searchQuery && (
+            <button
+              type="button"
+              className="search-clear-btn"
+              onClick={() => setSearchQuery('')}
+              title="Clear search"
+            >
+              ×
+            </button>
+          )}
         </div>
-      )}
+      </div>
 
       {/* Main Display: Boyd-style Academic Listing for Thesis, or Card Grid for Projects */}
       {activeCourse === 'THESIS' ? (
