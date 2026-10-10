@@ -2255,3 +2255,48 @@
 [data-theme='dark'] .lightbox-meta p {
   color: #94a3b8;
 }
+
+[data-theme='dark'] .course-topics {
+  background-color: var(--color-surface-hover);
+  color: #e2e8f0;
+  border: 1px solid var(--color-border);
+}
+
+[data-theme='dark'] .course-topics strong {
+  color: #60a5fa;
+}
+
+[data-theme='dark'] .course-code-badge {
+  background-color: #1e3a8a;
+  color: #93c5fd;
+  border: 1px solid #2563eb;
+}
+
+[data-theme='dark'] .course-institution {
+  color: #94a3b8;
+}
+
+[data-theme='dark'] .course-meta-item {
+  color: #cbd5e1;
+}
+
+[data-theme='dark'] .academic-thesis-topic {
+  color: #cbd5e1;
+}
+
+[data-theme='dark'] .academic-team-members-subline {
+  color: #94a3b8;
+}
+
+[data-theme='dark'] .team-member-item {
+  color: #cbd5e1;
+}
+
+[data-theme='dark'] .proj-deliverables-box {
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+[data-theme='dark'] .deliverables-heading {
+  color: var(--color-text-muted);
+}
