@@ -14,9 +14,6 @@ const Misc = () => {
         <span className="section-badge">Gallery & Talks</span>
         <h2 className="section-title">Activities & Presentations</h2>
         <div className="section-line"></div>
-        <p className="section-subtitle">
-          Recent academic summits, research day presentations, and recorded conference talks.
-        </p>
       </div>
 
       <div className="misc-tabs-container">

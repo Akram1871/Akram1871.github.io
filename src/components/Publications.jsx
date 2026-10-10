@@ -40,9 +40,6 @@ export default function Publications() {
           <BookOpen className="section-icon" />
           <h2 className="section-title">Publications</h2>
         </div>
-        <p className="section-subtitle">
-          Peer-reviewed conference proceedings, journal articles, workshop papers, and technical reports.
-        </p>
       </div>
 
       {/* Filter and Search Bar */}

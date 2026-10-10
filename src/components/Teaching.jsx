@@ -10,9 +10,6 @@ export default function Teaching() {
           <GraduationCap className="section-icon" />
           <h2 className="section-title">Teaching</h2>
         </div>
-        <p className="section-subtitle">
-          Undergraduate courses delivered at Shanto-Mariam University of Creative Technology.
-        </p>
       </div>
 
       <div className="courses-grid">

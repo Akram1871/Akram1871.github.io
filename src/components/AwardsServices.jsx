@@ -10,9 +10,6 @@ export default function AwardsServices() {
           <Trophy className="section-icon" />
           <h2 className="section-title">Honors, Awards & Services</h2>
         </div>
-        <p className="section-subtitle">
-          Competition rankings, shared tasks performance, and professional peer-review services.
-        </p>
       </div>
 
       <div className="awards-service-grid">
