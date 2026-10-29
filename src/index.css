@@ -25,7 +25,22 @@
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.07);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.08);
 
-  --max-width: 1080px;
+  --max-width: 1400px;
+  --container-padding: clamp(1rem, 3.5vw, 3rem);
+}
+
+@media (min-width: 1600px) {
+  :root {
+    --max-width: 1540px;
+    --container-padding: clamp(2rem, 4vw, 4.5rem);
+  }
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --max-width: 1680px;
+    --container-padding: clamp(2.5rem, 5vw, 5.5rem);
+  }
 }
 
 [data-theme='dark'] {
