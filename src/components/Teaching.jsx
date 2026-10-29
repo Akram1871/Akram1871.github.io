@@ -1,41 +1,42 @@
 import React from 'react';
-import { GraduationCap, Users, Calendar } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import teachingData from '../data/teaching.json';
 
 export default function Teaching() {
   return (
     <section id="teaching" className="section teaching-section">
-      <div className="section-header">
-        <div className="section-title-wrapper">
-          <GraduationCap className="section-icon" />
-          <h2 className="section-title">Teaching</h2>
-        </div>
+      <div className="section-header teaching-header-minimal">
+        <h2 className="teaching-section-title">Teaching</h2>
+        <div className="teaching-title-underline"></div>
       </div>
 
-      <div className="courses-grid">
-        {teachingData.map((course, idx) => (
-          <div key={idx} className="course-card">
-            <div className="course-code-badge">{course.courseCode}</div>
-            <h3 className="course-title">{course.title}</h3>
-            <p className="course-institution">{course.institution}</p>
+      <ul className="teaching-course-list">
+        {teachingData.map((course) => {
+          if (course.externalAnchor) {
+            return (
+              <li key={course.id} className="teaching-course-item">
+                <a
+                  href={course.externalAnchor}
+                  className="teaching-course-link"
+                >
+                  {course.displayLine}
+                </a>
+              </li>
+            );
+          }
 
-            <div className="course-meta-row">
-              <span className="course-meta-item">
-                <Calendar size={14} />
-                {course.semester}
-              </span>
-              <span className="course-meta-item">
-                <Users size={14} />
-                {course.enrolled}
-              </span>
-            </div>
-
-            <div className="course-topics">
-              <strong>Core Topics:</strong> {course.topics}
-            </div>
-          </div>
-        ))}
-      </div>
+          return (
+            <li key={course.id} className="teaching-course-item">
+              <Link
+                to={`/course/${course.id}`}
+                className="teaching-course-link"
+              >
+                {course.displayLine}
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
     </section>
   );
 }
