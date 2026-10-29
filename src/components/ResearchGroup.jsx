@@ -2,34 +2,41 @@ import React from 'react';
 import thesisStudentsData from '../data/thesisStudents.json';
 
 export default function ResearchGroup() {
-  // Flatten students into a list of individuals with their research topic and timeline
-  const individualStudents = [];
-  thesisStudentsData.forEach((item) => {
-    if (item.students && Array.isArray(item.students)) {
-      item.students.forEach((studentName) => {
-        individualStudents.push({
-          name: studentName,
-          role: 'Undergrad Thesis Researcher',
-          topic: item.topic,
-          period: item.period,
-          team: item.team
-        });
-      });
-    } else if (item.name) {
-      individualStudents.push({
-        name: item.name,
-        role: 'Undergrad Thesis Researcher',
-        topic: item.topic,
-        period: item.period,
-        team: null
-      });
-    }
-  });
+  // Use team-based grouping so students in the same team are listed side-by-side with commas
+  const teamItems = thesisStudentsData.map((item, idx) => ({
+    id: `team-${idx}`,
+    teamName: item.team || null,
+    names: item.students || (item.name ? [item.name] : []),
+    topic: item.topic,
+    period: item.period,
+    isTeam: Array.isArray(item.students) && item.students.length > 1
+  }));
 
-  // Split into two balanced columns (matching academic professor group layout)
-  const midPoint = Math.ceil(individualStudents.length / 2);
-  const leftColumnStudents = individualStudents.slice(0, midPoint);
-  const rightColumnStudents = individualStudents.slice(midPoint);
+  // Split into two balanced columns (3 in left, 2 in right)
+  const midPoint = Math.ceil(teamItems.length / 2);
+  const leftColumn = teamItems.slice(0, midPoint);
+  const rightColumn = teamItems.slice(midPoint);
+
+  const renderStudentItem = (item) => (
+    <div key={item.id} className="student-item">
+      <div className="student-name-row">
+        {item.names.map((name, i) => (
+          <React.Fragment key={i}>
+            <span className="student-name">{name}</span>
+            {i < item.names.length - 1 && <span className="name-separator">, </span>}
+          </React.Fragment>
+        ))}
+      </div>
+      <div className="student-details">
+        <span className="student-role">
+          Undergrad Thesis {item.isTeam ? 'Researchers' : 'Researcher'}
+        </span>{' '}
+        <span className="student-topic">
+          ({item.topic}, {item.period})
+        </span>
+      </div>
+    </div>
+  );
 
   return (
     <section id="research-group" className="section research-group-section">
@@ -56,26 +63,12 @@ export default function ResearchGroup() {
         <div className="research-students-grid">
           {/* Left Column */}
           <div className="students-column">
-            {leftColumnStudents.map((s, idx) => (
-              <div key={idx} className="student-item">
-                <span className="student-name">{s.name}</span>
-                <span className="student-details">
-                  {s.role} <span className="student-topic">({s.topic}, {s.period})</span>
-                </span>
-              </div>
-            ))}
+            {leftColumn.map(renderStudentItem)}
           </div>
 
           {/* Right Column */}
           <div className="students-column with-divider">
-            {rightColumnStudents.map((s, idx) => (
-              <div key={idx} className="student-item">
-                <span className="student-name">{s.name}</span>
-                <span className="student-details">
-                  {s.role} <span className="student-topic">({s.topic}, {s.period})</span>
-                </span>
-              </div>
-            ))}
+            {rightColumn.map(renderStudentItem)}
           </div>
         </div>
       </div>
