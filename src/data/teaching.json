@@ -31,17 +31,5 @@
     "displayLine": "Summer 2025: CSE 2100 / CSE 3298 Software Development Project & Engineering Lab (undergrad)",
     "enrolled": "Sections A & C (35 Capstone Teams)",
     "topics": "Agile Development, Mobile & Web Architecture, Flutter, Supabase, Firebase, Clean Architecture, Team Collaboration"
-  },
-  {
-    "id": "thesis-supervision",
-    "courseCode": "THESIS-UG",
-    "title": "Undergraduate Thesis Supervision",
-    "institution": "Shanto-Mariam University of Creative Technology",
-    "semester": "2026 – Present",
-    "level": "undergrad",
-    "displayLine": "2026 – Present: Undergraduate Thesis Supervision (undergrad)",
-    "enrolled": "5 Research Tracks (13 Supervised Students)",
-    "topics": "Multimodal Medical Visual Question Answering (Med-VQA), Vision-Language Models, Clinical Diagnostics, Applied Machine Learning, Computational Data Science",
-    "externalAnchor": "#student-projects"
   }
 ]

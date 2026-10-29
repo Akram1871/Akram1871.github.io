@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import {
   BookOpen,
@@ -14,9 +14,15 @@ import {
   ExternalLink,
   ChevronRight,
   Sun,
-  Moon
+  Moon,
+  Github,
+  Linkedin,
+  Brain,
+  Laptop
 } from 'lucide-react';
 import { coursesDetailData } from '../data/coursesDetailData';
+import mlProjectsData from '../data/mlProjects.json';
+import seProjectsData from '../data/studentProjects.json';
 
 export default function CourseDetail() {
   const { courseId } = useParams();
@@ -24,19 +30,69 @@ export default function CourseDetail() {
 
   const [activeSection, setActiveSection] = useState('about');
   const [searchQuery, setSearchQuery] = useState('');
+  const [selectedSection, setSelectedSection] = useState('All');
+  const [projectSearch, setProjectSearch] = useState('');
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem('theme') || 'light';
+    return localStorage.getItem('site-theme') || 'light';
   });
 
   useEffect(() => {
     window.scrollTo(0, 0);
     document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
+    localStorage.setItem('site-theme', theme);
   }, [theme, courseId]);
 
   const toggleTheme = () => {
     setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
   };
+
+  // Select corresponding student projects based on courseId
+  const courseProjects = useMemo(() => {
+    if (courseId === 'cse-3203') {
+      return mlProjectsData;
+    }
+    if (courseId === 'cse-2100') {
+      return seProjectsData;
+    }
+    return [];
+  }, [courseId]);
+
+  // Available sections for filtering
+  const sections = useMemo(() => {
+    const s = new Set();
+    courseProjects.forEach((p) => {
+      if (p.section) s.add(p.section);
+    });
+    return ['All', ...Array.from(s)];
+  }, [courseProjects]);
+
+  // Reset section filter if course changes
+  useEffect(() => {
+    setSelectedSection('All');
+    setProjectSearch('');
+  }, [courseId]);
+
+  // Filter student projects
+  const filteredProjects = useMemo(() => {
+    return courseProjects.filter((p) => {
+      const matchesSection = selectedSection === 'All' || p.section === selectedSection;
+      const q = projectSearch.toLowerCase().trim();
+      const matchesQ =
+        !q ||
+        (p.title && p.title.toLowerCase().includes(q)) ||
+        (p.description && p.description.toLowerCase().includes(q)) ||
+        (p.domain && p.domain.toLowerCase().includes(q)) ||
+        (p.section && p.section.toLowerCase().includes(q)) ||
+        (p.group && p.group.toLowerCase().includes(q)) ||
+        (p.students &&
+          p.students.some(
+            (s) =>
+              (s.name && s.name.toLowerCase().includes(q)) ||
+              (s.id && s.id.includes(q))
+          ));
+      return matchesSection && matchesQ;
+    });
+  }, [courseProjects, selectedSection, projectSearch]);
 
   if (!course) {
     return (
@@ -67,6 +123,9 @@ export default function CourseDetail() {
     { id: 'contents', label: 'Course Contents' },
     { id: 'clos', label: 'Learning Outcomes (CLOs)' },
     { id: 'schedule', label: 'Course Schedule' },
+    ...(courseProjects.length > 0
+      ? [{ id: 'projects', label: `Student Projects (${courseProjects.length})` }]
+      : []),
     { id: 'staff', label: 'Instructor & Staff' },
     { id: 'textbooks', label: 'Textbooks & References' }
   ];
@@ -113,7 +172,7 @@ export default function CourseDetail() {
             <input
               type="text"
               className="course-search-input"
-              placeholder={`Search ${course.code}...`}
+              placeholder={`Search schedule...`}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
@@ -138,14 +197,12 @@ export default function CourseDetail() {
           </nav>
 
           <div className="sidebar-doc-footer">
-            <p>
-              Shanto-Mariam University of Creative Technology <br />
-              Department of Computer Science & Engineering
-            </p>
+            <p>Department of CSE</p>
+            <p>Shanto-Mariam University</p>
           </div>
         </aside>
 
-        {/* Main Documentation Content */}
+        {/* Main Documentation Content Area */}
         <main className="course-main-content">
           {/* Header Banner */}
           <div className="course-content-header">
@@ -293,6 +350,187 @@ export default function CourseDetail() {
               </table>
             </div>
           </section>
+
+          {/* Section: Student Projects (if any for this course) */}
+          {courseProjects.length > 0 && (
+            <section id="projects" className="doc-section">
+              <div className="projects-header-flex">
+                <div>
+                  <h2 className="doc-section-heading">Student Projects & Lab Works</h2>
+                  <div className="doc-divider"></div>
+                </div>
+                <span className="projects-total-count-badge">
+                  {filteredProjects.length} of {courseProjects.length} Projects
+                </span>
+              </div>
+              <p className="section-note">
+                Supervised laboratory projects, capstone prototypes, and technical implementations built by enrolled student teams.
+              </p>
+
+              {/* Projects Toolbar: Section Filter & Search */}
+              <div className="course-projects-toolbar">
+                {sections.length > 1 && (
+                  <div className="course-filter-pills">
+                    {sections.map((sec) => (
+                      <button
+                        key={sec}
+                        type="button"
+                        className={`course-filter-pill ${selectedSection === sec ? 'active' : ''}`}
+                        onClick={() => setSelectedSection(sec)}
+                      >
+                        {sec}
+                        <span className="pill-num">
+                          {sec === 'All'
+                            ? courseProjects.length
+                            : courseProjects.filter((p) => p.section === sec).length}
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                )}
+
+                <div className="course-projects-search-box">
+                  <Search size={15} className="course-projects-search-icon" />
+                  <input
+                    type="text"
+                    className="course-projects-search-input"
+                    placeholder="Search projects by title, domain, student name or ID..."
+                    value={projectSearch}
+                    onChange={(e) => setProjectSearch(e.target.value)}
+                  />
+                  {projectSearch && (
+                    <button
+                      type="button"
+                      className="search-clear-btn"
+                      onClick={() => setProjectSearch('')}
+                      title="Clear search"
+                    >
+                      ×
+                    </button>
+                  )}
+                </div>
+              </div>
+
+              {/* Course Projects Grid */}
+              <div className="course-projects-cards-grid">
+                {filteredProjects.map((p) => (
+                  <div key={p.id} className="course-project-card">
+                    <div className="proj-card-top">
+                      <span className="proj-section-tag">
+                        {p.section} {p.group ? `· ${p.group}` : ''}
+                      </span>
+                      {p.domain && (
+                        <span className="proj-domain-tag">
+                          <Brain size={12} />
+                          <span>{p.domain}</span>
+                        </span>
+                      )}
+                    </div>
+
+                    <h3 className="proj-title">{p.title}</h3>
+
+                    {p.description && (
+                      <p className="proj-description">{p.description}</p>
+                    )}
+
+                    {/* Deliverables tags */}
+                    {p.deliverables && p.deliverables.length > 0 && (
+                      <div className="proj-deliverables-box">
+                        <div className="deliverables-heading">
+                          <FileText size={12} /> Deliverables:
+                        </div>
+                        <div className="deliverables-tags">
+                          {p.deliverables.map((item, dIdx) => (
+                            <span key={dIdx} className="deliverable-tag">
+                              <CheckCircle2 size={11} className="deliv-icon" />
+                              {item}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Team Members List */}
+                    {p.students && p.students.length > 0 && (
+                      <div className="proj-students-box">
+                        <div className="students-heading">
+                          <Users size={12} /> Team Members ({p.students.length}):
+                        </div>
+                        <ul className="student-tags-list">
+                          {p.students.map((student, sIdx) => (
+                            <li key={sIdx} className="student-member-tag">
+                              <span className="student-tag-name">{student.name}</span>
+                              {student.id && (
+                                <span className="student-tag-id">({student.id})</span>
+                              )}
+                              {student.github && (
+                                <a
+                                  href={student.github}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="student-icon-link"
+                                  title="GitHub Profile"
+                                >
+                                  <Github size={11} />
+                                </a>
+                              )}
+                              {student.linkedin && (
+                                <a
+                                  href={student.linkedin}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="student-icon-link"
+                                  title="LinkedIn Profile"
+                                >
+                                  <Linkedin size={11} />
+                                </a>
+                              )}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {/* Project Links (GitHub / LinkedIn / Live Repo) */}
+                    {(p.repo || p.linkedin) && (
+                      <div className="proj-footer-links">
+                        {p.repo && (
+                          <a
+                            href={p.repo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="proj-link-btn"
+                          >
+                            <Github size={13} />
+                            <span>Repository</span>
+                            <ExternalLink size={11} />
+                          </a>
+                        )}
+                        {p.linkedin && (
+                          <a
+                            href={p.linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="proj-link-btn linkedin-btn"
+                          >
+                            <Linkedin size={13} />
+                            <span>Post & Demo</span>
+                            <ExternalLink size={11} />
+                          </a>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                ))}
+
+                {filteredProjects.length === 0 && (
+                  <div className="no-projects-found">
+                    <p>No student projects match your search criteria.</p>
+                  </div>
+                )}
+              </div>
+            </section>
+          )}
 
           {/* Section: Staff & Instructor */}
           <section id="staff" className="doc-section">

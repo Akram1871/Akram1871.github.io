@@ -18,26 +18,56 @@ export default function Navbar() {
   };
 
   const navLinks = [
-    { label: 'About', href: '#about' },
-    { label: 'News', href: '#news' },
-    { label: 'Publications', href: '#publications' },
-    { label: 'Awards & Service', href: '#awards' },
-    { label: 'Teaching', href: '#teaching' },
-    { label: 'Student Projects', href: '#student-projects' },
-    { label: 'Misc', href: '#misc' },
+    { label: 'About', id: 'about' },
+    { label: 'News', id: 'news' },
+    { label: 'Research Group', id: 'research-group' },
+    { label: 'Publications', id: 'publications' },
+    { label: 'Awards & Service', id: 'awards' },
+    { label: 'Teaching', id: 'teaching' },
+    { label: 'Misc', id: 'misc' },
   ];
+
+  const handleNavClick = (e, sectionId) => {
+    e.preventDefault();
+    setMobileMenuOpen(false);
+
+    // If currently on a course detail page or another route
+    if (window.location.hash.startsWith('#/course')) {
+      window.location.hash = '#/';
+      setTimeout(() => {
+        const el = document.getElementById(sectionId);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 150);
+    } else {
+      const el = document.getElementById(sectionId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
 
   return (
     <header className="navbar-header">
       <div className="nav-container">
-        <a href="#about" className="nav-brand">
+        <a
+          href="#/"
+          onClick={(e) => handleNavClick(e, 'about')}
+          className="nav-brand"
+        >
           <span className="brand-name">{profileData.name}</span>
         </a>
 
         {/* Desktop Nav */}
         <nav className="nav-desktop">
           {navLinks.map((link) => (
-            <a key={link.href} href={link.href} className="nav-link">
+            <a
+              key={link.id}
+              href={`#/${link.id}`}
+              onClick={(e) => handleNavClick(e, link.id)}
+              className="nav-link"
+            >
               {link.label}
             </a>
           ))}
@@ -90,10 +120,10 @@ export default function Navbar() {
         <nav className="nav-mobile-menu">
           {navLinks.map((link) => (
             <a
-              key={link.href}
-              href={link.href}
+              key={link.id}
+              href={`#/${link.id}`}
               className="nav-mobile-link"
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={(e) => handleNavClick(e, link.id)}
             >
               {link.label}
             </a>

@@ -1,19 +1,33 @@
-import React from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import News from './components/News';
 import ExperienceEducation from './components/ExperienceEducation';
+import ResearchGroup from './components/ResearchGroup';
 import Publications from './components/Publications';
 import AwardsServices from './components/AwardsServices';
 import Teaching from './components/Teaching';
-import StudentProjects from './components/StudentProjects';
 import Misc from './components/Misc';
 import Footer from './components/Footer';
 import CourseDetail from './components/CourseDetail';
 import './App.css';
 
 function MainPortfolio() {
+  const location = useLocation();
+
+  useEffect(() => {
+    // If the hash contains a section anchor like #/teaching or #teaching
+    const hash = window.location.hash;
+    if (hash && hash !== '#/' && !hash.startsWith('#/course')) {
+      const targetId = hash.replace(/^#\/?/, '');
+      const el = document.getElementById(targetId);
+      if (el) {
+        setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 120);
+      }
+    }
+  }, [location]);
+
   return (
     <div className="site-wrapper">
       <Navbar />
@@ -21,10 +35,10 @@ function MainPortfolio() {
         <Hero />
         <News />
         <ExperienceEducation />
+        <ResearchGroup />
         <Publications />
         <AwardsServices />
         <Teaching />
-        <StudentProjects />
         <Misc />
       </main>
       <Footer />
@@ -38,6 +52,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<MainPortfolio />} />
         <Route path="/course/:courseId" element={<CourseDetail />} />
+        {/* Fallback route: any unknown route gracefully loads MainPortfolio */}
+        <Route path="*" element={<MainPortfolio />} />
       </Routes>
     </HashRouter>
   );

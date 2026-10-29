@@ -6,7 +6,7 @@
   "homepage": "https://akram1871.github.io",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node scripts/build.cjs",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist -b gh-pages"
