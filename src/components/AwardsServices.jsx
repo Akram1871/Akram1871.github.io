@@ -1,5 +1,5 @@
 import React from 'react';
-import { Trophy, CheckCircle, ShieldCheck } from 'lucide-react';
+import { Trophy, ShieldCheck } from 'lucide-react';
 import awardsData from '../data/awards.json';
 
 export default function AwardsServices() {
@@ -45,24 +45,28 @@ export default function AwardsServices() {
                 <ul className="service-list">
                   {svc.items.map((item, i) => {
                     const isObj = typeof item === 'object' && item !== null;
+                    const rolePrefix = isObj && item.rolePrefix ? item.rolePrefix : '';
                     const text = isObj ? item.name : item;
                     const url = isObj ? item.url : null;
 
                     return (
                       <li key={i}>
-                        <CheckCircle size={14} className="service-bullet-icon" />
-                        {url ? (
-                          <a
-                            href={url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="service-link"
-                          >
-                            {text}
-                          </a>
-                        ) : (
-                          <span>{text}</span>
-                        )}
+                        <span className="service-bullet-dot">•</span>
+                        <span>
+                          {rolePrefix && <span className="service-role-prefix">{rolePrefix}</span>}
+                          {url ? (
+                            <a
+                              href={url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="service-link"
+                            >
+                              {text}
+                            </a>
+                          ) : (
+                            text
+                          )}
+                        </span>
                       </li>
                     );
                   })}

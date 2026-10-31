@@ -31,19 +31,20 @@
       "role": "Reviewer",
       "items": [
         {
+          "rolePrefix": "Reviewer — ",
           "name": "International Conference on Innovations in Science, Engineering and Technology (ICISET 2026)",
           "url": "https://iciset.iiuc.ac.bd/"
         },
-        "Semantic Evaluation (SemEval 2020-2023, 2025)",
-        "AACL-IJCNLP 2023 (Sub-reviewer)"
+        "Reviewer — Semantic Evaluation (SemEval 2020-2023, 2025)",
+        "Sub-reviewer — AACL-IJCNLP 2023"
       ]
     },
     {
       "role": "Conference & Event Organization",
       "items": [
-        "Co-Convener & Technical Lead — SMUCT CSE Fest V3 (2026): Managed registration & payments for 600+ participants across 10 segments",
-        "The 44th International ACM SIGIR Conference (SIGIR-2021) — Student Volunteer",
-        "Intra-departmental Competitive Programming Contest (2022 and 2023) — Organizer"
+        "Co-Convener & Technical Lead — SMUCT CSE Fest V3 (2026)",
+        "Student Volunteer — The 44th International ACM SIGIR Conference (SIGIR-2021)",
+        "Organizer — Intra-departmental Competitive Programming Contest (2022 and 2023)"
       ]
     }
   ]
