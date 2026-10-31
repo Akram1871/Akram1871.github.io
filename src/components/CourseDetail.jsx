@@ -18,10 +18,12 @@ import {
   Github,
   Linkedin,
   Brain,
-  Laptop
+  Laptop,
+  Scale,
+  ShieldAlert,
+  Info
 } from 'lucide-react';
 import { coursesDetailData } from '../data/coursesDetailData';
-import mlProjectsData from '../data/mlProjects.json';
 import seProjectsData from '../data/studentProjects.json';
 
 export default function CourseDetail() {
@@ -46,11 +48,8 @@ export default function CourseDetail() {
     setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
   };
 
-  // Select corresponding student projects based on courseId
+  // Only CSE 2100 retains the student projects section
   const courseProjects = useMemo(() => {
-    if (courseId === 'cse-3203') {
-      return mlProjectsData;
-    }
     if (courseId === 'cse-2100') {
       return seProjectsData;
     }
@@ -118,11 +117,15 @@ export default function CourseDetail() {
     );
   });
 
+  const isLabCourse = courseId === 'cse-2100';
+
   const navItems = [
     { id: 'about', label: 'About Course' },
     { id: 'contents', label: 'Course Contents' },
     { id: 'clos', label: 'Learning Outcomes (CLOs)' },
     { id: 'schedule', label: 'Course Schedule' },
+    { id: 'grading', label: isLabCourse ? 'Grading & Rubrics' : 'Assessment & Grading' },
+    { id: 'policies', label: 'Policies & AI Guidelines' },
     ...(courseProjects.length > 0
       ? [{ id: 'projects', label: `Student Projects (${courseProjects.length})` }]
       : []),
@@ -237,10 +240,12 @@ export default function CourseDetail() {
               <span className="meta-label">Prerequisite</span>
               <span className="meta-val">{course.prerequisite}</span>
             </div>
-            <div className="meta-card">
-              <span className="meta-label">Co-requisite / Sessional</span>
-              <span className="meta-val">{course.labCourse}</span>
-            </div>
+            {course.labCourse && course.labCourse !== 'None' && (
+              <div className="meta-card">
+                <span className="meta-label">Co-requisite / Sessional</span>
+                <span className="meta-val">{course.labCourse}</span>
+              </div>
+            )}
           </div>
 
           {/* Section: About Course */}
@@ -351,7 +356,285 @@ export default function CourseDetail() {
             </div>
           </section>
 
-          {/* Section: Student Projects (if any for this course) */}
+          {/* Section: Assessment & Grading Policy */}
+          <section id="grading" className="doc-section">
+            <h2 className="doc-section-heading">
+              {isLabCourse ? 'Evaluation & Lab Project Rubrics' : 'Assessment and Evaluation Policy'}
+            </h2>
+            <div className="doc-divider"></div>
+
+            {!isLabCourse ? (
+              <div className="grading-policy-container">
+                <p className="doc-lead-paragraph">
+                  Students are assessed based on their overall performance across all evaluations (class tests, quizzes, assignments, presentations, attendance, mid-term, and semester final examinations). Continuous Assessment is integral to the learning process and is supplemented by formal examinations.
+                </p>
+
+                <div className="exam-distribution-grid">
+                  {/* Mid Term Card */}
+                  <div className="exam-dist-card">
+                    <h3 className="exam-card-title">Mid-Term Examination (40 Marks)</h3>
+                    <p className="exam-card-note">35 Marks Continuous Assessment / Test / Assignment / Exam + 5 Marks Attendance</p>
+                    <table className="grading-table">
+                      <thead>
+                        <tr>
+                          <th>Assessment Type</th>
+                          <th>Marks</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Attendance</td>
+                          <td><strong>5</strong></td>
+                        </tr>
+                        <tr>
+                          <td>Continuous Assessment (Quizzes / Assignments / Class Tests)</td>
+                          <td><strong>15</strong></td>
+                        </tr>
+                        <tr>
+                          <td>Mid-Term Examination</td>
+                          <td><strong>20</strong></td>
+                        </tr>
+                        <tr className="table-total-row">
+                          <td>Total (Up to Mid Term Examination)</td>
+                          <td><strong>40</strong></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  {/* Final Exam Card */}
+                  <div className="exam-dist-card">
+                    <h3 className="exam-card-title">Final Examination (60 Marks)</h3>
+                    <p className="exam-card-note">55 Marks Continuous Assessment / Test / Assignment / Exam + 5 Marks Attendance</p>
+                    <table className="grading-table">
+                      <thead>
+                        <tr>
+                          <th>Assessment Type</th>
+                          <th>Marks</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Attendance</td>
+                          <td><strong>5</strong></td>
+                        </tr>
+                        <tr>
+                          <td>Continuous Assessment</td>
+                          <td><strong>15</strong></td>
+                        </tr>
+                        <tr>
+                          <td>Final Semester Examination</td>
+                          <td><strong>40</strong></td>
+                        </tr>
+                        <tr className="table-total-row">
+                          <td>Total (For Final Examination)</td>
+                          <td><strong>60</strong></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                {/* Combined Total */}
+                <div className="grading-total-banner">
+                  <span><strong>Total Course Marks: 100</strong> (Mid-Term 40% + Semester Final 60%)</span>
+                </div>
+
+                {/* Letter Grade System Table */}
+                <div className="letter-grade-box">
+                  <h3 className="letter-grade-title">SMUCT Uniform Grading Scale</h3>
+                  <div className="grading-table-wrapper">
+                    <table className="grading-table letter-grade-table">
+                      <thead>
+                        <tr>
+                          <th>Numerical Grade / Percentage</th>
+                          <th>Description</th>
+                          <th>Letter Grade</th>
+                          <th>Grade Point</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>80% and above</td><td>Excellent</td><td><strong>A+</strong></td><td>4.00</td></tr>
+                        <tr><td>75% to 79%</td><td>Very Good</td><td><strong>A</strong></td><td>3.75</td></tr>
+                        <tr><td>70% to 74%</td><td>Good plus</td><td><strong>A-</strong></td><td>3.50</td></tr>
+                        <tr><td>65% to 69%</td><td>Good</td><td><strong>B+</strong></td><td>3.25</td></tr>
+                        <tr><td>60% to 64%</td><td>Good minus</td><td><strong>B</strong></td><td>3.00</td></tr>
+                        <tr><td>55% to 59%</td><td>Quite satisfactory</td><td><strong>B-</strong></td><td>2.75</td></tr>
+                        <tr><td>50% to 54%</td><td>Satisfactory</td><td><strong>C+</strong></td><td>2.50</td></tr>
+                        <tr><td>45% to 49%</td><td>Barely satisfactory</td><td><strong>C</strong></td><td>2.25</td></tr>
+                        <tr><td>40% to 44%</td><td>Barely adequate / Weak</td><td><strong>D</strong></td><td>2.00</td></tr>
+                        <tr><td>Below 40%</td><td>Fail</td><td><strong>F</strong></td><td>0.00</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div className="gpa-formula-box">
+                    <strong>GPA Calculation Formula:</strong>
+                    <code>GPA = Σ(Credit of course passed × Grade Points earned) / Σ(Total Credits)</code>
+                  </div>
+                </div>
+
+                {/* Sessional Connection Note for ML */}
+                {courseId === 'cse-3203' && (
+                  <div className="sessional-cross-card">
+                    <div className="sessional-header">
+                      <Brain size={18} className="sessional-icon" />
+                      <h4>Co-requisite Note: CSE 3204 Machine Learning Sessional</h4>
+                    </div>
+                    <p>
+                      <strong>CSE 3204</strong> is evaluated separately under a rigorous field-work and implementation rubric (55 Marks Project + 45 Marks Lab Experiments & Final Viva/Exam). Final lab project evaluations require mandatory Hardware integration (sensor/IoT/camera) or Software integration (deployable web/mobile/API/dashboard) connected directly to trained ML models.
+                    </p>
+                  </div>
+                )}
+              </div>
+            ) : (
+              /* Dedicated Rubrics for CSE 2100 Software Development Project */
+              <div className="grading-policy-container">
+                <p className="doc-lead-paragraph">
+                  CSE 2100 Software Development Project is evaluated continuously based on milestone deliverables, sprint reviews, Clean Architecture implementation, and final live product demonstration.
+                </p>
+
+                <div className="exam-dist-card">
+                  <h3 className="exam-card-title">Capstone Project Evaluation Distribution (100 Marks)</h3>
+                  <table className="grading-table">
+                    <thead>
+                      <tr>
+                        <th>Milestone / Component</th>
+                        <th>Marks</th>
+                        <th>Deliverables & Criteria</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1. Problem Scoping & SDLC Planning</td>
+                        <td><strong>10</strong></td>
+                        <td>Problem statement, stakeholder analysis, user stories, MoSCoW prioritization, Git setup.</td>
+                      </tr>
+                      <tr>
+                        <td>2. Software Architecture & Design Patterns</td>
+                        <td><strong>15</strong></td>
+                        <td>UML diagrams, clean architecture layers, design pattern documentation (Singleton, Factory, Repository).</td>
+                      </tr>
+                      <tr>
+                        <td>3. Flutter Mobile App UI & State Management</td>
+                        <td><strong>25</strong></td>
+                        <td>Responsive widget layouts, clean component hierarchy, declarative routing, reactive state management.</td>
+                      </tr>
+                      <tr>
+                        <td>4. Backend & Database Integration</td>
+                        <td><strong>15</strong></td>
+                        <td>RESTful API integration, authentication, Supabase/Firebase cloud database connection.</td>
+                      </tr>
+                      <tr>
+                        <td>5. Testing, Code Quality & DevOps Deployment</td>
+                        <td><strong>15</strong></td>
+                        <td>Unit/widget tests, code refactoring, Git commit conventions, CI/CD and web/app distribution.</td>
+                      </tr>
+                      <tr>
+                        <td>6. Live Capstone Demo, Presentation & Technical Viva</td>
+                        <td><strong>20</strong></td>
+                        <td>Live software demonstration, architectural defense before faculty panel, and final project report.</td>
+                      </tr>
+                      <tr className="table-total-row">
+                        <td>Total Marks</td>
+                        <td><strong>100</strong></td>
+                        <td>Graded according to SMUCT standard letter grade scale.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                {/* Letter Grade Table */}
+                <div className="letter-grade-box">
+                  <h3 className="letter-grade-title">SMUCT Uniform Grading Scale</h3>
+                  <div className="grading-table-wrapper">
+                    <table className="grading-table letter-grade-table">
+                      <thead>
+                        <tr>
+                          <th>Numerical Grade</th>
+                          <th>Description</th>
+                          <th>Letter Grade</th>
+                          <th>Grade Point</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>80% and above</td><td>Excellent</td><td><strong>A+</strong></td><td>4.00</td></tr>
+                        <tr><td>75% to 79%</td><td>Very Good</td><td><strong>A</strong></td><td>3.75</td></tr>
+                        <tr><td>70% to 74%</td><td>Good plus</td><td><strong>A-</strong></td><td>3.50</td></tr>
+                        <tr><td>65% to 69%</td><td>Good</td><td><strong>B+</strong></td><td>3.25</td></tr>
+                        <tr><td>60% to 64%</td><td>Good minus</td><td><strong>B</strong></td><td>3.00</td></tr>
+                        <tr><td>55% to 59%</td><td>Quite satisfactory</td><td><strong>B-</strong></td><td>2.75</td></tr>
+                        <tr><td>50% to 54%</td><td>Satisfactory</td><td><strong>C+</strong></td><td>2.50</td></tr>
+                        <tr><td>45% to 49%</td><td>Barely satisfactory</td><td><strong>C</strong></td><td>2.25</td></tr>
+                        <tr><td>40% to 44%</td><td>Barely adequate / Weak</td><td><strong>D</strong></td><td>2.00</td></tr>
+                        <tr><td>Below 40%</td><td>Fail</td><td><strong>F</strong></td><td>0.00</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            )}
+          </section>
+
+          {/* Section: Academic Conduct & AI Policy */}
+          <section id="policies" className="doc-section">
+            <h2 className="doc-section-heading">Course Policies & Generative AI Guidelines</h2>
+            <div className="doc-divider"></div>
+
+            <div className="policies-grid">
+              {/* AI Policy Card */}
+              <div className="policy-card ai-policy-highlight">
+                <div className="policy-card-header">
+                  <Brain size={20} className="policy-icon-ai" />
+                  <h3 className="policy-card-title">Permissible Use of Generative AI</h3>
+                </div>
+                <div className="policy-card-body">
+                  <p>
+                    The use of Generative AI tools (e.g., ChatGPT, Claude, GitHub Copilot, Gemini) is <strong>permissible as a learning aid</strong> for ideation, syntax troubleshooting, concept clarification, and debugging assistance.
+                  </p>
+                  <ul className="policy-checklist">
+                    <li>
+                      <strong>Mandatory Disclosure:</strong> Whenever AI tools are consulted or used to assist in homework, lab exercises, reports, or project code, students <em>must explicitly state and cite where, how, and which AI tools were used</em> (e.g., in a dedicated section of the project report or code docstring).
+                    </li>
+                    <li>
+                      <strong>Restricted Environment During Final Exams:</strong> Practical final assessment exams and technical defense in sessional courses will be conducted in a <strong>specialized lab environment where external internet and Generative AI access will be strictly restricted</strong>.
+                    </li>
+                    <li>
+                      <strong>Individual Mastery:</strong> Students must be fully prepared to independently explain, modify, debug, and justify any submitted line of code or analysis during one-on-one viva examinations. Inability to explain submitted work will lead to forfeiture of marks.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* General Course Policy Card */}
+              <div className="policy-card">
+                <div className="policy-card-header">
+                  <Scale size={20} className="policy-icon-general" />
+                  <h3 className="policy-card-title">Institutional Regulations & Code of Conduct</h3>
+                </div>
+                <div className="policy-card-body">
+                  <ol className="general-policy-list">
+                    <li>
+                      <strong>Continuous Assessment / Test / Lab Assignment:</strong> Continuous assessments, quizzes, and assignments will be conducted appropriately for both mid-term and final term periods.
+                    </li>
+                    <li>
+                      <strong>Mid-Term and Final Exam:</strong> Examinations follow the official university schedule. Notes or books are not allowed in the exam hall. Mobile phones are strictly prohibited.
+                    </li>
+                    <li>
+                      <strong>Students with Physical Disabilities / Special Needs:</strong> Students with disabilities are required to inform the Department of Computer Science and Engineering of any specific classroom or examination accommodations as early as possible.
+                    </li>
+                    <li>
+                      <strong>Make-up Classes:</strong> Make-up classes will be scheduled in designated free slots when regular classes are disrupted due to unforeseen situations. Make-up quizzes may be arranged for students with verified medical emergencies.
+                    </li>
+                    <li>
+                      <strong>Cheating and Plagiarism:</strong> Adopting unfair means, copying reports, or submitting unacknowledged work will be penalized according to the University Regulation and Student Code of Conduct.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Section: Student Projects (shown only for courses with projects, e.g. CSE 2100) */}
           {courseProjects.length > 0 && (
             <section id="projects" className="doc-section">
               <div className="projects-header-flex">
@@ -421,7 +704,7 @@ export default function CourseDetail() {
                       </span>
                       {p.domain && (
                         <span className="proj-domain-tag">
-                          <Brain size={12} />
+                          <Laptop size={12} />
                           <span>{p.domain}</span>
                         </span>
                       )}

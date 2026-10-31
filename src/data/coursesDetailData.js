@@ -11,8 +11,8 @@ export const coursesDetailData = {
     term: "Summer 2025, Winter 2026, Summer 2026",
     creditHour: "3.00",
     contactHours: "3.0 Hours/Week",
-    prerequisite: "CSE 2204 (Discrete Mathematics & Applied Probability)",
-    labCourse: "CSE 3204 / CSE 4252: Machine Learning Sessional",
+    prerequisite: "CSE 2204: Linear Algebra and basic statistics",
+    labCourse: "CSE 3204: Machine Learning Sessional",
     about: "This course introduces the fundamental theory and concepts of Machine Learning algorithms, with a special emphasis on Supervised, Unsupervised, and Ensemble Learning paradigms and their real-world applications. Students gain mathematical and algorithmic knowledge to analyze, design, and deploy robust machine learning models for complex computational problems.",
     courseContents: [
       {
@@ -75,8 +75,8 @@ export const coursesDetailData = {
       }
     ],
     schedule: [
-      { week: "Week 01", title: "Course Introduction & ML Paradigms", content: "Overview of Machine Learning, AI vs ML vs DL, Supervised vs Unsupervised vs RL, Machine learning workflow.", readings: "Bishop Ch. 1 / Mitchell Ch. 1" },
-      { week: "Week 02", title: "Linear Regression & Gradient Descent", content: "Univariate & Multivariate linear regression, cost function, Ordinary Least Squares, Batch Gradient Descent.", readings: "Géron Ch. 4" },
+      { week: "Week 01", title: "Course Introduction & ML Paradigms", content: "Overview of Machine Learning, AI vs ML vs DL, Supervised vs Unsupervised vs RL, Machine learning workflow.", readings: "Reddi Ch. 1 / Bishop Ch. 1" },
+      { week: "Week 02", title: "Linear Regression & Gradient Descent", content: "Univariate & Multivariate linear regression, cost function, Ordinary Least Squares, Batch Gradient Descent.", readings: "Reddi Ch. 2 / Géron Ch. 4" },
       { week: "Week 03", title: "Logistic Regression & Classification Metrics", content: "Odds ratio, Sigmoid function, Decision boundaries, Cost function (Cross-Entropy), Confusion matrix, Precision/Recall/F1/ROC.", readings: "Géron Ch. 4" },
       { week: "Week 04", title: "Decision Trees & Information Theory", content: "Entropy, Information Gain, ID3, C4.5, Gini Impurity, CART algorithm, Overfitting and pruning techniques.", readings: "Mitchell Ch. 3" },
       { week: "Week 05", title: "Bayesian Learning & Naïve Bayes", content: "Maximum A Posteriori (MAP), Maximum Likelihood Estimation (MLE), Naïve Bayes classifier (Gaussian, Multinomial), text classification.", readings: "Mitchell Ch. 6" },
@@ -84,13 +84,14 @@ export const coursesDetailData = {
       { week: "Week 07", title: "Review & Mid-term Examination", content: "Comprehensive review of supervised algorithms, mathematical problem solving, and Mid-term exam.", readings: "Exam coverage" },
       { week: "Week 08", title: "Unsupervised Learning & Clustering", content: "K-Means algorithm, inertia, K-Medoids, Elbow method, Silhouette analysis, Hierarchical agglomerative clustering.", readings: "Géron Ch. 9" },
       { week: "Week 09", title: "Dimensionality Reduction", content: "Curse of dimensionality, Principal Component Analysis (PCA), Eigenvectors, Singular Value Decomposition (SVD).", readings: "Bishop Ch. 12" },
-      { week: "Week 10", title: "Neural Networks: Perceptron & MLP", content: "Biological neuron model, Perceptron learning rule, Multi-layer Perceptron (MLP), activation functions (ReLU, Sigmoid, Tanh).", readings: "Goodfellow Ch. 6" },
-      { week: "Week 11", title: "Backpropagation & Optimizers", content: "Derivation of backpropagation via chain rule, Regularization (L1, L2, Dropout), Optimizers (SGD with Momentum, RMSProp, Adam).", readings: "Goodfellow Ch. 8" },
+      { week: "Week 10", title: "Neural Networks: Perceptron & MLP", content: "Biological neuron model, Perceptron learning rule, Multi-layer Perceptron (MLP), activation functions (ReLU, Sigmoid, Tanh).", readings: "Goodfellow Ch. 6 / Reddi Ch. 4" },
+      { week: "Week 11", title: "Backpropagation & Optimizers", content: "Derivation of backpropagation via chain rule, Regularization (L1, L2, Dropout), Optimizers (SGD with Momentum, RMSProp, Adam).", readings: "Goodfellow Ch. 8 / Reddi Ch. 5" },
       { week: "Week 12", title: "Ensemble Methods (Bagging & Boosting)", content: "Bootstrap aggregating, Random Forests, Out-of-Bag evaluation, Boosting concept, AdaBoost, XGBoost.", readings: "Géron Ch. 7" },
       { week: "Week 13", title: "Sequential Models (RNN, LSTM, GRU)", content: "Modeling sequences, Recurrent Neural Networks, Vanishing/Exploding gradients, LSTM memory cells, GRU architecture.", readings: "Goodfellow Ch. 10" },
-      { week: "Week 14", title: "Transformers & Modern LLM Overview", content: "Attention is All You Need: Self-attention mechanism, Multi-head attention, Positional encoding, BERT and GPT models.", readings: "Vaswani et al. (2017)" }
+      { week: "Week 14", title: "Transformers & Modern LLM Overview", content: "Attention is All You Need: Self-attention mechanism, Multi-head attention, Positional encoding, BERT and GPT models.", readings: "Vaswani et al. (2017) / Reddi Systems" }
     ],
     textbooks: [
+      "Prof. Vijay Janapa Reddi, 'Machine Learning Systems: Principles and Practices of Engineering Artificially Intelligent Systems' (Main Source).",
       "Tom M. Mitchell, 'Machine Learning', McGraw-Hill Education.",
       "Aurélien Géron, 'Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow', O'Reilly Media, 3rd Edition.",
       "Christopher M. Bishop, 'Pattern Recognition and Machine Learning', Springer.",
@@ -99,9 +100,9 @@ export const coursesDetailData = {
   },
 
   "cse-4105": {
-    code: "CSE 4105",
-    title: "Digital Signal and Image Processing",
-    fullTitle: "CSE 4105 / CSE 4145: Digital Signal and Image Processing",
+    code: "CSE 4145",
+    title: "Digital Image Processing",
+    fullTitle: "CSE 4145: Digital Image Processing",
     department: "Department of Computer Science & Engineering",
     institution: "Shanto-Mariam University of Creative Technology",
     instructor: "Md. Akram Hossain",
@@ -110,8 +111,8 @@ export const coursesDetailData = {
     term: "Summer 2025, Winter 2025",
     creditHour: "3.00",
     contactHours: "3.0 Hours/Week",
-    prerequisite: "None (Calculus, Linear Algebra & Programming proficiency recommended)",
-    labCourse: "CSE 4106 / CSE 4146: Digital Image Processing Sessional",
+    prerequisite: "Calculus, Vector and Matrices",
+    labCourse: "None",
     about: "Digital Image Processing (DIP) is a capstone-level advanced course designed to consolidate and extend students' knowledge in mathematics, signal processing, and computer algorithms. Offered in the senior undergraduate curriculum, it equips students with theoretical principles and practical techniques of digital image representation, enhancement, restoration, morphological processing, segmentation, compression, and feature extraction for healthcare, remote sensing, and computer vision applications.",
     courseContents: [
       {
@@ -203,18 +204,18 @@ export const coursesDetailData = {
   "cse-2100": {
     code: "CSE 2100",
     title: "Software Development Project",
-    fullTitle: "CSE 2100 / CSE 3298: Software Development Project & Engineering Lab",
+    fullTitle: "CSE 2100: Software Development Project",
     department: "Department of Computer Science & Engineering",
     institution: "Shanto-Mariam University of Creative Technology",
     instructor: "Md. Akram Hossain",
     instructorEmail: "akramhossain@smuct.ac.bd",
     instructorProfile: "/",
     term: "Summer 2025",
-    creditHour: "0.75 / 1.50",
-    contactHours: "1.5 – 3.0 Hours/Week",
+    creditHour: "0.75",
+    contactHours: "1.5 Hours/Week",
     prerequisite: "None (Object-Oriented Programming & Basic Data Structures recommended)",
     labCourse: "Studio Project Lab & Capstone Mentorship",
-    about: "This project-based studio course is engineered to help undergraduate students bridge software engineering theory and commercial development practice. Students work in agile teams to navigate the full product lifecycle: requirement elicitation, wireframing, architecture design, front-end & back-end development, version-controlled collaboration, testing, and continuous deployment. It fosters essential competencies in problem analysis, UI/UX design, modular coding, and live capstone presentations.",
+    about: "This project-based studio course is engineered to help undergraduate students bridge software engineering theory and commercial development practice. Students work in agile teams to navigate the full software development life cycle (SDLC): requirement elicitation, architecture design, design patterns, mobile app development with Flutter, version-controlled collaboration, testing, and continuous deployment. It fosters essential competencies in problem analysis, clean architecture, modular coding, and live capstone presentations.",
     courseContents: [
       {
         topic: "Software Development Platforms & Tooling",
@@ -225,12 +226,12 @@ export const coursesDetailData = {
         details: "Collaborative brainstorming and vetting project ideas, defining product vision, scope definition, stakeholder analysis, requirement elicitation (functional vs. non-functional requirements), writing user stories, and creating milestone-driven project roadmaps."
       },
       {
-        topic: "Fundamentals of UI/UX Design & Prototyping",
-        details: "Distinction between UI and UX, principles of clean interface design, accessibility standards (WCAG), user journeys, information architecture, creating interactive low-fidelity and high-fidelity wireframes using modern design tools (Figma)."
+        topic: "Software Design Patterns & Architecture",
+        details: "Foundational software design patterns (Creational, Structural, Behavioral including Singleton, Factory, Observer, Repository pattern), SOLID principles, Separation of Concerns, Clean Architecture layers, and modular system design."
       },
       {
-        topic: "Front-End Engineering (HTML5, Modern CSS & Component Frameworks)",
-        details: "Semantic web structure, forms and validation, responsive layouts, CSS Box Model, Flexbox, Grid, CSS custom properties, responsive design principles; Introduction to component-based front-end frameworks (React/Flutter) and styling architectures."
+        topic: "Mobile App Development with Flutter & Dart",
+        details: "Dart language essentials, Flutter widget tree, Stateless vs. Stateful widgets, responsive UI layouts, navigation & routing, state management paradigms (Provider / Riverpod / Bloc), and mobile app lifecycle management."
       },
       {
         topic: "Application Architecture, State Management & Database Integration",
@@ -264,10 +265,10 @@ export const coursesDetailData = {
       },
       {
         no: "CLO 3",
-        statement: "Design UI/UX prototypes, system architecture, database schemas, and develop a fully functional application using appropriate software platforms and frameworks.",
+        statement: "Apply software design patterns, system architecture, database schemas, and develop a fully functional mobile/web application using Flutter and appropriate frameworks.",
         plo: "PLO 3",
         skillLevel: "F3 (Thinking & Creation)",
-        teachingStrategy: "Hands-on lab demonstrations of UI/UX tools (Figma) and code frameworks; Guided studio development of modular system architectures.",
+        teachingStrategy: "Hands-on lab demonstrations of Flutter & design patterns; Guided studio development of modular clean architectures.",
         assessment: "Prototype submission, Git repository code quality, lab-based milestone reviews, and oral technical viva."
       },
       {
@@ -281,25 +282,25 @@ export const coursesDetailData = {
     ],
     schedule: [
       { week: "Week 01", title: "Development Environments & Git Version Control", content: "Setting up VS Code, Git CLI, repository creation, branching strategies, commit conventions, GitHub collaboration.", readings: "Pro Git by Scott Chacon" },
-      { week: "Week 02", title: "Project Inception & Team Formation", content: "Brainstorming problem statements, market feasibility, team charter, stakeholder identification, setting up Kanban boards.", readings: "Agile Alliance Principles" },
+      { week: "Week 02", title: "SDLC Workflows & Project Inception", content: "Software Development Life Cycle (SDLC) models, Agile Scrum, brainstorming problem statements, team formation, Kanban boards.", readings: "Agile Alliance Principles" },
       { week: "Week 03", title: "Requirement Engineering & User Stories", content: "Functional and non-functional requirements, writing user stories with acceptance criteria, MoSCoW prioritization.", readings: "Software Engineering (Pressman) Ch. 5" },
-      { week: "Week 04", title: "UI/UX Principles & Figma Wireframing", content: "Visual hierarchy, typography, color palettes, spacing, accessibility (contrast, tap targets), creating interactive Figma wireframes.", readings: "Refactoring UI (Wathan & Schoger)" },
-      { week: "Week 05", title: "Front-End Foundation (HTML5 & Semantic Structure)", content: "Document object model, accessible form controls, input validations, audio/video elements, SEO best practices.", readings: "MDN Web Docs: HTML" },
-      { week: "Week 06", title: "Responsive Layouts with Modern CSS", content: "Box model, display properties, Flexbox alignment, CSS Grid tracks and areas, media queries, mobile-first design.", readings: "MDN Web Docs: CSS Layout" },
-      { week: "Week 07", title: "Mid-Term Milestone: Prototype & Requirement Review", content: "Evaluation of team Figma prototypes, requirement specification approval, and interactive viva.", readings: "Milestone Deliverables" },
-      { week: "Week 08", title: "Component-Based Architecture", content: "Introduction to reactive UI components, props, state, event listeners, modular directory structure.", readings: "React / Flutter Official Docs" },
+      { week: "Week 04", title: "Software Design Patterns & Clean Architecture", content: "Creational and Structural patterns (Singleton, Factory, Repository), SOLID design principles, modular code organization.", readings: "Design Patterns (GoF) / Clean Architecture" },
+      { week: "Week 05", title: "Flutter Fundamentals & Dart Essentials", content: "Dart language overview, Flutter SDK setup, widget hierarchy, Stateless & Stateful widgets, reactive UI building.", readings: "Flutter Official Documentation" },
+      { week: "Week 06", title: "Flutter UI Layouts & Navigation", content: "Responsive mobile layouts (Column, Row, Stack, ListView), theme customization, declarative routing, and screen transitions.", readings: "Flutter UI Guidelines" },
+      { week: "Week 07", title: "Mid-Term Milestone: Architecture & Prototype Review", content: "Evaluation of Flutter application prototype, architecture diagrams, requirement specification approval, and interactive viva.", readings: "Milestone Deliverables" },
+      { week: "Week 08", title: "State Management in Flutter", content: "State management paradigms (Provider / Riverpod / Bloc), unidirectional data flow, managing app-wide reactive state.", readings: "Flutter State Management Docs" },
       { week: "Week 09", title: "Backend Services & Database Integration", content: "REST API concepts, HTTP methods, CRUD operations, database schema design, BaaS integration (Supabase/Firebase).", readings: "RESTful Web APIs" },
       { week: "Week 10", title: "Authentication & Security Fundamentals", content: "User registration, password hashing, JWT tokens, session persistence, role-based route guarding.", readings: "OWASP Top 10 Security" },
-      { week: "Week 11", title: "Testing, Code Review & Refactoring", content: "Unit tests, cross-browser and cross-device testing, code smells, clean architecture, GitHub PR review sessions.", readings: "Clean Code (Robert C. Martin)" },
-      { week: "Week 12", title: "Deployment, CI/CD & Documentation", content: "Production bundling, automated deployment to GitHub Pages / Vercel, writing professional README with architecture diagrams.", readings: "DevOps Handbook" },
+      { week: "Week 11", title: "Testing, Code Review & Refactoring", content: "Unit tests, widget testing, code smells, clean architecture enforcement, GitHub PR review sessions.", readings: "Clean Code (Robert C. Martin)" },
+      { week: "Week 12", title: "Deployment, CI/CD & Documentation", content: "Production bundling, automated deployment to GitHub Pages / Vercel / App distribution, writing professional README.", readings: "DevOps Handbook" },
       { week: "Week 13", title: "Dry-Run & User Acceptance Testing (UAT)", content: "Peer testing, bug triage, performance optimization, demo script preparation, slide deck refinement.", readings: "Testing Checklists" },
       { week: "Week 14", title: "Final Capstone Demo Day & Presentation", content: "Live application demonstrations, question-answer defense before faculty panel, submission of final project reports.", readings: "Final Capstone Showcase" }
     ],
     textbooks: [
       "Roger S. Pressman, Bruce R. Maxim, 'Software Engineering: A Practitioner's Approach', McGraw-Hill.",
       "Robert C. Martin, 'Clean Code: A Handbook of Agile Software Craftsmanship', Prentice Hall.",
-      "Scott Chacon, Ben Straub, 'Pro Git', Apress (Open Access).",
-      "Steve Krug, 'Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability', New Riders."
+      "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides, 'Design Patterns: Elements of Reusable Object-Oriented Software', Addison-Wesley.",
+      "Scott Chacon, Ben Straub, 'Pro Git', Apress (Open Access)."
     ]
   }
 };

@@ -1,35 +1,35 @@
 [
   {
     "id": "cse-3203",
-    "courseCode": "CSE 3203 / CSE 4252",
-    "title": "Machine Learning (Theory & Lab)",
+    "courseCode": "CSE 3203",
+    "title": "Machine Learning",
     "institution": "Shanto-Mariam University of Creative Technology",
     "semester": "Summer 2025, Winter 2026, Summer 2026",
     "level": "undergrad",
-    "displayLine": "Summer 2025, Winter 2026, Summer 2026: CSE 3203 / CSE 4252 Machine Learning (Theory & Lab) (undergrad)",
+    "displayLine": "Summer 2025, Winter 2026, Summer 2026: CSE 3203 Machine Learning (undergrad)",
     "enrolled": "Total enrolled students: 150+",
     "topics": "Supervised Learning, Unsupervised Learning, Neural Networks, Transformer Architectures, Model Training & Evaluation, Hands-on Lab Pipelines"
   },
   {
     "id": "cse-4105",
-    "courseCode": "CSE 4105 / CSE 4145",
-    "title": "Digital Signal and Image Processing",
+    "courseCode": "CSE 4145",
+    "title": "Digital Image Processing",
     "institution": "Shanto-Mariam University of Creative Technology",
     "semester": "Summer 2025, Winter 2025",
     "level": "undergrad",
-    "displayLine": "Summer 2025, Winter 2025: CSE 4105 / CSE 4145 Digital Signal and Image Processing (undergrad)",
+    "displayLine": "Summer 2025, Winter 2025: CSE 4145 Digital Image Processing (undergrad)",
     "enrolled": "Total enrolled students: 160+",
     "topics": "Image Fundamentals, Image Enhancement, Spatial Filtering, Frequency Domain, Morphological Processing, Segmentation"
   },
   {
     "id": "cse-2100",
-    "courseCode": "CSE 2100 / CSE 3298",
-    "title": "Software Development Project & Engineering Lab",
+    "courseCode": "CSE 2100",
+    "title": "Software Development Project",
     "institution": "Shanto-Mariam University of Creative Technology",
     "semester": "Summer 2025",
     "level": "undergrad",
-    "displayLine": "Summer 2025: CSE 2100 / CSE 3298 Software Development Project & Engineering Lab (undergrad)",
+    "displayLine": "Summer 2025: CSE 2100 Software Development Project (undergrad)",
     "enrolled": "Sections A & C (35 Capstone Teams)",
-    "topics": "Agile Development, Mobile & Web Architecture, Flutter, Supabase, Firebase, Clean Architecture, Team Collaboration"
+    "topics": "SDLC, Design Patterns, Mobile & Web Architecture, Flutter App Development, Clean Architecture, Team Collaboration"
   }
 ]

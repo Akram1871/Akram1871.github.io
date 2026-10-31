@@ -10,7 +10,7 @@ export default function News() {
       <div className="section-header">
         <div className="section-title-wrapper">
           <Bell className="section-icon" />
-          <h2 className="section-title">Recent News, Awards & Grants</h2>
+          <h2 className="section-title">Recent News</h2>
           <span className="news-counter-badge">{profileData.news.length} Updates</span>
         </div>
       </div>

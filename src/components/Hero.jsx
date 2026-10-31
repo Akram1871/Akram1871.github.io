@@ -66,7 +66,13 @@ export default function Hero() {
         <div className="hero-bio-container">
           <h2 className="bio-heading">Biography</h2>
           <div className="bio-paragraphs">
-            {profileData.bio.map((paragraph, idx) => (
+            <p>
+              I am now a Lecturer in <a href="https://smuct.ac.bd/cse/" target="_blank" rel="noopener noreferrer" className="external-link-inline">Department of Computer Science and Engineering</a> at Shanto-Mariam University of Creative Technology (SMUCT). Prior to joining SMUCT, I served as an Adjunct Lecturer at BGC Trust University Bangladesh.
+            </p>
+            <p>
+              Previously, I was a research fellow at the Data Science Research Group (<a href="https://csecu-dsg.github.io/#" target="_blank" rel="noopener noreferrer" className="external-link-inline">CSECU-DSG</a>) at the University of Chittagong under the supervision of Professor Abu Nowshed Chy. I earned my B.Sc. in Engineering in Computer Science and Engineering from the University of Chittagong.
+            </p>
+            {profileData.bio.slice(2).map((paragraph, idx) => (
               <p key={idx}>{paragraph}</p>
             ))}
           </div>
