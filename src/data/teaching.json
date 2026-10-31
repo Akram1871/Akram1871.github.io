@@ -5,8 +5,9 @@
     "title": "Machine Learning",
     "institution": "Shanto-Mariam University of Creative Technology",
     "semester": "Summer 2025, Winter 2026, Summer 2026",
+    "shortSemester": "Summer 25, 26, Winter 26",
     "level": "undergrad",
-    "displayLine": "Summer 2025, Winter 2026, Summer 2026: CSE 3203 Machine Learning (undergrad)",
+    "displayLine": "CSE 3203 Machine Learning (undergrad): Summer 25, 26, Winter 26",
     "enrolled": "Total enrolled students: 150+",
     "topics": "Supervised Learning, Unsupervised Learning, Neural Networks, Transformer Architectures, Model Training & Evaluation"
   },
@@ -16,8 +17,9 @@
     "title": "Machine Learning Sessional",
     "institution": "Shanto-Mariam University of Creative Technology",
     "semester": "Summer 2025, Winter 2026, Summer 2026",
+    "shortSemester": "Summer 25, 26, Winter 26",
     "level": "undergrad",
-    "displayLine": "Summer 2025, Winter 2026, Summer 2026: CSE 3204 Machine Learning Sessional (undergrad)",
+    "displayLine": "CSE 3204 Machine Learning Sessional (undergrad): Summer 25, 26, Winter 26",
     "enrolled": "Total enrolled students: 150+",
     "topics": "Field Work-Based Dataset Collection, EDA, Feature Engineering, Scikit-Learn, PyTorch, Hardware/Software ML System Integration"
   },
@@ -27,8 +29,9 @@
     "title": "Digital Image Processing",
     "institution": "Shanto-Mariam University of Creative Technology",
     "semester": "Summer 2025, Winter 2025",
+    "shortSemester": "Summer 25, Winter 25",
     "level": "undergrad",
-    "displayLine": "Summer 2025, Winter 2025: CSE 4145 Digital Image Processing (undergrad)",
+    "displayLine": "CSE 4145 Digital Image Processing (undergrad): Summer 25, Winter 25",
     "enrolled": "Total enrolled students: 160+",
     "topics": "Image Fundamentals, Image Enhancement, Spatial Filtering, Frequency Domain, Morphological Processing, Segmentation"
   },
@@ -38,8 +41,9 @@
     "title": "Software Development Project",
     "institution": "Shanto-Mariam University of Creative Technology",
     "semester": "Summer 2025",
+    "shortSemester": "Summer 25",
     "level": "undergrad",
-    "displayLine": "Summer 2025: CSE 2100 Software Development Project (undergrad)",
+    "displayLine": "CSE 2100 Software Development Project (undergrad): Summer 25",
     "enrolled": "Sections A & C (35 Capstone Teams)",
     "topics": "SDLC, Design Patterns, Mobile & Web Architecture, Flutter App Development, Clean Architecture, Team Collaboration"
   }

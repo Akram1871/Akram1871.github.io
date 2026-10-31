@@ -12,6 +12,19 @@ export default function Teaching() {
 
       <ul className="teaching-course-list">
         {teachingData.map((course) => {
+          const content = (
+            <>
+              <span className="teaching-course-highlight">
+                {course.courseCode ? `${course.courseCode} ${course.title}` : course.title}
+                {course.level ? ` (${course.level})` : ''}
+              </span>
+              <span className="teaching-course-sep">: </span>
+              <span className="teaching-course-semesters">
+                {course.shortSemester || course.semester}
+              </span>
+            </>
+          );
+
           if (course.externalAnchor) {
             return (
               <li key={course.id} className="teaching-course-item">
@@ -19,7 +32,7 @@ export default function Teaching() {
                   href={course.externalAnchor}
                   className="teaching-course-link"
                 >
-                  {course.displayLine}
+                  {content}
                 </a>
               </li>
             );
@@ -31,7 +44,7 @@ export default function Teaching() {
                 to={`/course/${course.id}`}
                 className="teaching-course-link"
               >
-                {course.displayLine}
+                {content}
               </Link>
             </li>
           );

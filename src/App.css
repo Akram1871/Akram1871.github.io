@@ -2674,7 +2674,7 @@
 
 .teaching-course-link {
   color: #1d4ed8;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
   transition: all 0.15s ease;
   display: inline-block;
@@ -2686,11 +2686,43 @@
   transform: translateX(3px);
 }
 
+.teaching-course-highlight {
+  font-weight: 600;
+  color: #1d4ed8;
+}
+
+.teaching-course-link:hover .teaching-course-highlight {
+  color: #1e40af;
+}
+
+.teaching-course-sep {
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+.teaching-course-semesters {
+  color: #2563eb;
+  font-weight: 400;
+}
+
 [data-theme='dark'] .teaching-course-link {
+  color: #93c5fd;
+}
+
+[data-theme='dark'] .teaching-course-highlight {
   color: #60a5fa;
+  font-weight: 600;
 }
 
 [data-theme='dark'] .teaching-course-link:hover {
+  color: #bfdbfe;
+}
+
+[data-theme='dark'] .teaching-course-link:hover .teaching-course-highlight {
+  color: #bfdbfe;
+}
+
+[data-theme='dark'] .teaching-course-semesters {
   color: #93c5fd;
 }
 
