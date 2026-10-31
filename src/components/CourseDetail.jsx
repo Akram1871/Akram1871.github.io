@@ -144,7 +144,7 @@ export default function CourseDetail() {
         <div className="course-top-container">
           <Link to="/" className="course-back-brand" title="Return to Home Portfolio">
             <ArrowLeft size={18} />
-            <span className="brand-name">Akram Hossain</span>
+            <span className="brand-name">Md. Akram Hossain</span>
             <span className="brand-sep">/</span>
             <span className="brand-course-tag">{course.code}</span>
           </Link>
