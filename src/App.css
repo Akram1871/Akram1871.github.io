@@ -2676,7 +2676,7 @@
 
 .teaching-course-link:hover {
   color: #1e40af;
-  text-decoration: underline;
+  text-decoration: none;
   transform: translateX(3px);
 }
 
@@ -2947,7 +2947,7 @@
 }
 
 .instructor-link:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .instructor-email {
@@ -2957,7 +2957,7 @@
 
 .instructor-email:hover {
   color: var(--color-primary);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Quick Meta Cards */
@@ -3965,12 +3965,12 @@
 
 .external-link-inline {
   color: var(--color-primary);
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  text-decoration: none;
   font-weight: 500;
   transition: color 0.15s;
 }
 
 .external-link-inline:hover {
   color: var(--color-primary-dark);
+  text-decoration: none;
 }
