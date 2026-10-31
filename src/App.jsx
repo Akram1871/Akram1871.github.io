@@ -11,6 +11,7 @@ import Teaching from './components/Teaching';
 import Misc from './components/Misc';
 import Footer from './components/Footer';
 import CourseDetail from './components/CourseDetail';
+import ErrorBoundary from './components/ErrorBoundary';
 import './App.css';
 
 function MainPortfolio() {
@@ -49,12 +50,14 @@ function MainPortfolio() {
 export default function App() {
   return (
     <HashRouter>
-      <Routes>
-        <Route path="/" element={<MainPortfolio />} />
-        <Route path="/course/:courseId" element={<CourseDetail />} />
-        {/* Fallback route: any unknown route gracefully loads MainPortfolio */}
-        <Route path="*" element={<MainPortfolio />} />
-      </Routes>
+      <ErrorBoundary>
+        <Routes>
+          <Route path="/" element={<MainPortfolio />} />
+          <Route path="/course/:courseId" element={<CourseDetail />} />
+          {/* Fallback route: any unknown route gracefully loads MainPortfolio */}
+          <Route path="*" element={<MainPortfolio />} />
+        </Routes>
+      </ErrorBoundary>
     </HashRouter>
   );
 }

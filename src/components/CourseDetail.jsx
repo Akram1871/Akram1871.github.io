@@ -25,6 +25,7 @@ import {
 } from 'lucide-react';
 import { coursesDetailData } from '../data/coursesDetailData';
 import seProjectsData from '../data/studentProjects.json';
+import mlProjectsData from '../data/mlProjects.json';
 
 export default function CourseDetail() {
   const { courseId } = useParams();

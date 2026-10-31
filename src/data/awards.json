@@ -31,12 +31,11 @@
       "role": "Reviewer",
       "items": [
         {
-          "rolePrefix": "Reviewer — ",
           "name": "International Conference on Innovations in Science, Engineering and Technology (ICISET 2026)",
           "url": "https://iciset.iiuc.ac.bd/"
         },
-        "Reviewer — Semantic Evaluation (SemEval 2020-2023, 2025)",
-        "Sub-reviewer — AACL-IJCNLP 2023"
+        "Semantic Evaluation (SemEval 2020-2023, 2025)",
+        "AACL-IJCNLP 2023 (Sub-reviewer)"
       ]
     },
     {
