@@ -48,8 +48,11 @@ export default function CourseDetail() {
     setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
   };
 
-  // Only CSE 2100 retains the student projects section
+  // Student projects shown for CSE 3204 (ML lab projects) and CSE 2100 (SE projects)
   const courseProjects = useMemo(() => {
+    if (courseId === 'cse-3204') {
+      return mlProjectsData;
+    }
     if (courseId === 'cse-2100') {
       return seProjectsData;
     }
@@ -117,7 +120,7 @@ export default function CourseDetail() {
     );
   });
 
-  const isLabCourse = courseId === 'cse-2100';
+  const isLabCourse = courseId === 'cse-2100' || courseId === 'cse-3204';
 
   const navItems = [
     { id: 'about', label: 'About Course' },
@@ -485,6 +488,118 @@ export default function CourseDetail() {
                     </p>
                   </div>
                 )}
+              </div>
+            ) : courseId === 'cse-3204' ? (
+              /* Dedicated 55-Mark Field Work & ML Lab Implementation Rubrics for CSE 3204 */
+              <div className="grading-policy-container">
+                <p className="doc-lead-paragraph">
+                  CSE 3204 Machine Learning Sessional evaluation starts with field work-based dataset collection and continues through data preparation, exploratory analysis, model development, hardware/software integration, final report, presentation, demo, and viva.
+                </p>
+
+                <div className="exam-dist-card">
+                  <h3 className="exam-card-title">Field Work & Project Implementation Rubric (Total: 55 Marks)</h3>
+                  <p className="exam-card-note">
+                    Mandatory Integration Requirement: Every project must include at least one practical hardware (IoT/sensors/microcontrollers) or software (deployable web/mobile/API/dashboard) component connected to the trained ML model.
+                  </p>
+                  <table className="grading-table">
+                    <thead>
+                      <tr>
+                        <th>Evaluation Component</th>
+                        <th>Marks</th>
+                        <th>Criteria & Milestones</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1. Field Work Planning & Questionnaire Design</td>
+                        <td><strong>6</strong></td>
+                        <td>Target respondent identification, data collection method, questionnaire relevance, target variable specification.</td>
+                      </tr>
+                      <tr>
+                        <td>2. Field Data Collection & Authenticity</td>
+                        <td><strong>7</strong></td>
+                        <td>Authentic primary field collection, minimum sample size adherence (150–1000+ records), raw dataset submission, proof/evidence.</td>
+                      </tr>
+                      <tr>
+                        <td>3. Dataset Preparation & Cleaning</td>
+                        <td><strong>7</strong></td>
+                        <td>Handling missing records, outlier treatment, duplicate removal, categorical encoding, feature scaling, cleaned dataset submission.</td>
+                      </tr>
+                      <tr>
+                        <td>4. Exploratory Data Analysis (EDA) & Feature Engineering</td>
+                        <td><strong>7</strong></td>
+                        <td>Meaningful graphs with analytical explanations, correlation inspection, domain feature engineering, ML-ready array preparation.</td>
+                      </tr>
+                      <tr>
+                        <td>5. Model Training & Evaluation</td>
+                        <td><strong>8</strong></td>
+                        <td>Train-test split, implementation of at least two algorithms, cross-validation, metric comparison (Accuracy, Precision, Recall, F1, ROC-AUC), best model justification.</td>
+                      </tr>
+                      <tr>
+                        <td>6. Final Presentation, Report, Demo, Viva & Hardware/Software Integration</td>
+                        <td><strong>20</strong></td>
+                        <td>Slides (2), problem/methodology explanation (2), data prep/EDA explanation (2), model training explanation (3), hardware/software integration (4), live demo (2), final report (2), clean notebook/repo (1), technical viva (2).</td>
+                      </tr>
+                      <tr className="table-total-row">
+                        <td>Project Total Marks</td>
+                        <td><strong>55</strong></td>
+                        <td>Combined with lab experiments (45 Marks) for 100-mark course grade.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                {/* Integration Examples & Sample Size Table */}
+                <div className="letter-grade-box">
+                  <h3 className="letter-grade-title">Sample Size Benchmarks & Integration Requirements</h3>
+                  <div className="grading-table-wrapper">
+                    <table className="grading-table">
+                      <thead>
+                        <tr>
+                          <th>Project Domain / Type</th>
+                          <th>Recommended Minimum Valid Records</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>Medical Diagnosis / Tumor / Cancer Detection</td><td><strong>1000+ records</strong> (Ethically collected/anonymized)</td></tr>
+                        <tr><td>Health-Risk / Disease / Patient Survey Projects</td><td><strong>700+ records</strong></td></tr>
+                        <tr><td>Image-Based Classification / Computer Vision</td><td><strong>500+ images/records</strong></td></tr>
+                        <tr><td>Text Classification / Sentiment Analysis</td><td><strong>500+ text samples</strong></td></tr>
+                        <tr><td>General Classification or Regression Tasks</td><td><strong>300+ records</strong></td></tr>
+                        <tr><td>Customer / Student / Business Surveys</td><td><strong>200+ records</strong></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                {/* Letter Grade Table */}
+                <div className="letter-grade-box">
+                  <h3 className="letter-grade-title">SMUCT Uniform Grading Scale</h3>
+                  <div className="grading-table-wrapper">
+                    <table className="grading-table letter-grade-table">
+                      <thead>
+                        <tr>
+                          <th>Numerical Grade</th>
+                          <th>Description</th>
+                          <th>Letter Grade</th>
+                          <th>Grade Point</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>80% and above</td><td>Excellent</td><td><strong>A+</strong></td><td>4.00</td></tr>
+                        <tr><td>75% to 79%</td><td>Very Good</td><td><strong>A</strong></td><td>3.75</td></tr>
+                        <tr><td>70% to 74%</td><td>Good plus</td><td><strong>A-</strong></td><td>3.50</td></tr>
+                        <tr><td>65% to 69%</td><td>Good</td><td><strong>B+</strong></td><td>3.25</td></tr>
+                        <tr><td>60% to 64%</td><td>Good minus</td><td><strong>B</strong></td><td>3.00</td></tr>
+                        <tr><td>55% to 59%</td><td>Quite satisfactory</td><td><strong>B-</strong></td><td>2.75</td></tr>
+                        <tr><td>50% to 54%</td><td>Satisfactory</td><td><strong>C+</strong></td><td>2.50</td></tr>
+                        <tr><td>45% to 49%</td><td>Barely satisfactory</td><td><strong>C</strong></td><td>2.25</td></tr>
+                        <tr><td>40% to 44%</td><td>Barely adequate / Weak</td><td><strong>D</strong></td><td>2.00</td></tr>
+                        <tr><td>Below 40%</td><td>Fail</td><td><strong>F</strong></td><td>0.00</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
             ) : (
               /* Dedicated Rubrics for CSE 2100 Software Development Project */

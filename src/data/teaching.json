@@ -8,7 +8,18 @@
     "level": "undergrad",
     "displayLine": "Summer 2025, Winter 2026, Summer 2026: CSE 3203 Machine Learning (undergrad)",
     "enrolled": "Total enrolled students: 150+",
-    "topics": "Supervised Learning, Unsupervised Learning, Neural Networks, Transformer Architectures, Model Training & Evaluation, Hands-on Lab Pipelines"
+    "topics": "Supervised Learning, Unsupervised Learning, Neural Networks, Transformer Architectures, Model Training & Evaluation"
+  },
+  {
+    "id": "cse-3204",
+    "courseCode": "CSE 3204",
+    "title": "Machine Learning Sessional",
+    "institution": "Shanto-Mariam University of Creative Technology",
+    "semester": "Summer 2025, Winter 2026, Summer 2026",
+    "level": "undergrad",
+    "displayLine": "Summer 2025, Winter 2026, Summer 2026: CSE 3204 Machine Learning Sessional (undergrad)",
+    "enrolled": "Total enrolled students: 150+",
+    "topics": "Field Work-Based Dataset Collection, EDA, Feature Engineering, Scikit-Learn, PyTorch, Hardware/Software ML System Integration"
   },
   {
     "id": "cse-4105",

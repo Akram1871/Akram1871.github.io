@@ -99,6 +99,109 @@ export const coursesDetailData = {
     ]
   },
 
+  "cse-3204": {
+    code: "CSE 3204",
+    title: "Machine Learning Sessional",
+    fullTitle: "CSE 3204: Machine Learning Sessional",
+    department: "Department of Computer Science & Engineering",
+    institution: "Shanto-Mariam University of Creative Technology",
+    instructor: "Md. Akram Hossain",
+    instructorEmail: "akramhossain@smuct.ac.bd",
+    instructorProfile: "/",
+    term: "Summer 2025, Winter 2026, Summer 2026",
+    creditHour: "1.50",
+    contactHours: "3.0 Hours/Week",
+    prerequisite: "CSE 2204: Linear Algebra and basic statistics; Co-requisite: CSE 3203",
+    labCourse: "Co-requisite to CSE 3203 Machine Learning (Theory)",
+    about: "CSE 3204 is a rigorous, practical, field-work-based laboratory course where students design and implement end-to-end Machine Learning systems. The course emphasizes authentic primary data collection, data preprocessing, exploratory analysis, model development with Scikit-Learn and PyTorch, and mandatory integration with physical hardware devices (sensors, IoT, microcontrollers) or deployable software applications (web apps, APIs, dashboards).",
+    courseContents: [
+      {
+        topic: "Python Scientific Stack & Environment Setup",
+        details: "Setting up Anaconda/Miniconda, Jupyter Notebook, Google Colab, NumPy vectorization, Pandas DataFrame manipulation, Matplotlib & Seaborn data visualization pipelines."
+      },
+      {
+        topic: "Field Work Planning & Authentic Dataset Collection",
+        details: "Formulating real-world predictive questions, designing targeted surveys/questionnaires, identifying target respondents, gathering valid field data (medical, clinical, agricultural, sensor-based, or user surveys), maintaining authentic and ethical data standards."
+      },
+      {
+        topic: "Dataset Preparation, Data Cleaning & Preprocessing",
+        details: "Handling missing values (imputation strategies), detecting and treating outliers, duplicate removal, categorical variable encoding (One-Hot, Ordinal, Target), feature scaling (StandardScaler, MinMaxScaler), handling class imbalance (SMOTE, class weighting)."
+      },
+      {
+        topic: "Exploratory Data Analysis (EDA) & Feature Engineering",
+        details: "Univariate, bivariate, and multivariate distribution analysis, correlation heatmaps, feature extraction, domain-specific feature engineering, dimensionality reduction via PCA."
+      },
+      {
+        topic: "Supervised Model Training & Hyperparameter Tuning",
+        details: "Stratified train-test splitting, k-fold cross-validation, baseline regression and classification models, Hyperparameter tuning using GridSearchCV and RandomizedSearchCV, comparative model evaluation across metrics (Accuracy, Precision, Recall, F1, ROC-AUC, MAE, RMSE)."
+      },
+      {
+        topic: "Mandatory Hardware/Software System Integration",
+        details: "Connecting trained models to practical interactive systems: Hardware integration (sensor arrays, Arduino, ESP32, Raspberry Pi, camera/biometric modules) or Software integration (FastAPI, Flask, Streamlit, Gradio, web/mobile dashboards, REST APIs)."
+      },
+      {
+        topic: "Model Export, Deployment & Defense",
+        details: "Model serialization (pickle, joblib, ONNX), end-to-end pipeline export, writing comprehensive technical reports, creating interactive live demos, and defending methodology in oral technical viva."
+      }
+    ],
+    clos: [
+      {
+        no: "CLO 1",
+        statement: "Formulate real-world predictive problems, design structured field surveys, and collect authentic, ethically sound primary datasets.",
+        plo: "PLO 2, PLO 6",
+        skillLevel: "P2 (Perception & Practice)",
+        teachingStrategy: "Interactive lab demonstrations of questionnaire design and data collection protocols.",
+        assessment: "Field work plan, questionnaire submission, and raw dataset verification."
+      },
+      {
+        no: "CLO 2",
+        statement: "Clean, preprocess, analyze, and engineer features from raw real-world data using Python scientific libraries.",
+        plo: "PLO 3, PLO 5",
+        skillLevel: "P3 (Precision Execution)",
+        teachingStrategy: "Hands-on guided programming labs with real-world messy datasets.",
+        assessment: "Cleaned dataset submissions, EDA visualization notebooks, and code reviews."
+      },
+      {
+        no: "CLO 3",
+        statement: "Implement, evaluate, and tune multiple machine learning algorithms, selecting and justifying the optimal model based on rigorous quantitative metrics.",
+        plo: "PLO 4, PLO 5",
+        skillLevel: "P4 (Analytical Synthesis)",
+        teachingStrategy: "Step-by-step algorithm benchmarking lab exercises and parameter tuning clinics.",
+        assessment: "Model comparison notebooks, evaluation metrics report, and train-test splits."
+      },
+      {
+        no: "CLO 4",
+        statement: "Integrate trained machine learning models into functional hardware devices or software applications, presenting and defending the complete system through live demos and technical reports.",
+        plo: "PLO 8, PLO 10",
+        skillLevel: "P5 (Full Integration & Defense)",
+        teachingStrategy: "Studio mentorship on hardware/software integration and presentation rehearsals.",
+        assessment: "Live system demo, hardware/software integration functionality, final report, and technical viva."
+      }
+    ],
+    schedule: [
+      { week: "Week 01", title: "Lab Orientation & Field Work Planning", content: "Introduction to ML Sessional, problem selection, questionnaire design, identifying target variables, field work rubric.", readings: "Lab Rubrics Document" },
+      { week: "Week 02", title: "Field Data Collection & Ethical Sourcing", content: "Conducting field surveys, gathering minimum valid records, submitting raw datasets with fieldwork proof and evidence.", readings: "Data Collection Protocols" },
+      { week: "Week 03", title: "Dataset Preparation & Data Cleaning Lab", content: "Handling missing records, categorical encoding, duplicate detection, formatting raw and cleaned CSVs.", readings: "Hands-on ML Ch. 2" },
+      { week: "Week 04", title: "Exploratory Data Analysis (EDA) Lab", content: "Distribution plots, correlation heatmaps, feature selection, preparing final ML-ready arrays.", readings: "Python Data Science Handbook" },
+      { week: "Week 05", title: "Supervised Model Training & Evaluation", content: "Train-test splits, implementing at least two algorithms (Logistic, Random Forest, SVM, XGBoost), metric comparisons.", readings: "Scikit-Learn Guide" },
+      { week: "Week 06", title: "Hardware / Software Integration Workshop", content: "Connecting models to Streamlit/FastAPI or ESP32/Raspberry Pi sensors, serial communication, API endpoints.", readings: "Reddi Systems Ch. 6 & 7" },
+      { week: "Week 07", title: "Mid-Term Lab Progress Evaluation", content: "Review of data cleaning, EDA, baseline models, and integration plan; oral viva check.", readings: "Progress Deliverables" },
+      { week: "Week 08", title: "Neural Networks & Deep Learning in Lab", content: "Building Multi-Layer Perceptrons in PyTorch/Keras, training loops, loss curve inspection, early stopping.", readings: "PyTorch Official Tutorials" },
+      { week: "Week 09", title: "Model Optimization & Hyperparameter Search", content: "Cross-validation, GridSearchCV, learning rate tuning, confusion matrix interpretation, threshold tuning.", readings: "Scikit-Learn Tuning Docs" },
+      { week: "Week 10", title: "Edge Deployment & Model Packaging", content: "Model serialization (joblib/ONNX), lightweight model quantization, testing local inference speed.", readings: "Reddi Edge AI Ch. 8" },
+      { week: "Week 11", title: "Full System Dry-Run & Testing", content: "End-to-end integration testing: input capture → inference → live UI/hardware action, edge-case debugging.", readings: "Integration Checklist" },
+      { week: "Week 12", title: "Final Report Preparation & Documentation", content: "Structuring 10-point final submission package: architecture diagrams, README, code formatting.", readings: "Submission Guidelines" },
+      { week: "Week 13", title: "Final Project Presentations & Live Demo Day", content: "Live demonstration of integrated system, evaluation against 20-mark final rubric before faculty panel.", readings: "Final Rubrics" },
+      { week: "Week 14", title: "Comprehensive Technical Viva & Lab Exam", content: "Individual code defense, theoretical justification, restricted-environment hands-on lab assessment.", readings: "Lab Exam Coverage" }
+    ],
+    textbooks: [
+      "Machine Learning Lab Project Complete Rubrics: Field Work-Based Dataset Collection and ML Implementation (SMUCT Department of CSE).",
+      "Prof. Vijay Janapa Reddi, 'Machine Learning Systems: Principles and Practices of Engineering Artificially Intelligent Systems'.",
+      "Aurélien Géron, 'Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow', O'Reilly Media.",
+      "Wes McKinney, 'Python for Data Analysis: Data Wrangling with Pandas, NumPy, and Jupyter', O'Reilly Media."
+    ]
+  },
+
   "cse-4105": {
     code: "CSE 4145",
     title: "Digital Image Processing",
