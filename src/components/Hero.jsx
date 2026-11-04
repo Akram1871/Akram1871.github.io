@@ -87,7 +87,10 @@ export default function Hero() {
               ))}
             </div>
             <div className="interests-robotics-note">
-              <em>I am interested in interdisciplinary research in robotics.</em>
+              <span>
+                {profileData.researchNote ||
+                  'I am interested in developing reliable and computationally efficient Large Language Models (LLMs), with a particular focus on mitigating hallucinations in domain-specific applications such as healthcare. I also explore model compression and knowledge distillation to enable LLM deployment on resource-constrained edge devices, particularly for intelligent robotic systems.'}
+              </span>
             </div>
           </div>
 
