@@ -32,6 +32,7 @@
       "institution": "Shanto-Mariam University of Creative Technology",
       "period": "January 2025 – Present",
       "description": "Developing an embedded system for a cognitively-inspired hearing aid integrating NLP and speech enhancement for real-time audio processing on edge devices.",
+      "github": "https://github.com/Akram1871/COGMHEAR",
       "technologies": ["Python", "TensorFlow", "PyTorch", "ESP32", "Raspberry Pi 5", "IoT Protocols"]
     }
   ],

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, GraduationCap, Github, Linkedin, Twitter, MapPin, Cpu } from 'lucide-react';
+import { Mail, GraduationCap, Github, Linkedin, Twitter, MapPin, Cpu, ExternalLink } from 'lucide-react';
 import profileData from '../data/profile.json';
 
 const iconMap = {
@@ -115,6 +115,21 @@ export default function Hero() {
                       {proj.technologies.map((tech, tIdx) => (
                         <span key={tIdx} className="tech-badge">{tech}</span>
                       ))}
+                    </div>
+                  )}
+                  {proj.github && (
+                    <div className="current-project-links">
+                      <a
+                        href={proj.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="current-project-github-btn"
+                        title="View GitHub Repository"
+                      >
+                        <Github size={13} />
+                        <span>Repository</span>
+                        <ExternalLink size={11} />
+                      </a>
                     </div>
                   )}
                 </div>
